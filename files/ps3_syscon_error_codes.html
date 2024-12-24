@@ -1,2 +1,722 @@
-<!-- Coded for PS3™ 4K Pro by Luan Teles -->
+<!DOCTYPE html> <html class="client-js ve-available" lang=en dir=ltr style><!--
+ Page saved with SingleFile 
+ url: https://www.psdevwiki.com/ps3/Syscon_Error_Codes 
+ saved date: Tue Dec 24 2024 04:59:27 GMT-0300 (Horário Padrão de Brasília)
+--><meta charset=utf-8>
+<title>Syscon Error Codes</title>
+<style>.mw-cookiewarning-container{position:fixed;background-color:rgba(90,90,90,0.85);box-sizing:border-box;padding:7px 15px;bottom:0;left:0;width:100%;z-index:1999;display:flex;justify-content:center}@media screen and (max-width:550px){.mw-cookiewarning-container{flex-wrap:wrap}.mw-cookiewarning-container .mw-cookiewarning-text{margin-bottom:0.7em}}.mw-cookiewarning-container .mw-cookiewarning-text{display:flex;align-items:center;color:#fff;font-weight:bold;font-size:92%}.mw-cookiewarning-container form{flex-shrink:0}.mw-cookiewarning-container form .oo-ui-widget{margin:0 0 0 8px}.mw-content-ltr ul{margin-left:1.6em}.hlist ul{margin:0}.hlist li{display:inline;margin:0}.hlist dd:after,.hlist li:after{content:" ·";font-weight:700}.hlist dd:last-child:after,.hlist dt:last-child:after,.hlist li:last-child:after{content:none}table.navbox{border:1px solid #aaa;width:100%;margin:auto;clear:both;font-size:88%;text-align:center;padding:1px}.navbox th{text-align:center;padding-left:1em;padding-right:1em}th.navbox-group{white-space:nowrap;text-align:right}.navbox{background:#fdfdfd}.navbox-list{border-color:#fdfdfd}.navbox th{background:#ccf}th.navbox-group{background:#ddf}.navbox-odd{background:transparent}.navbox .hlist li{white-space:nowrap}.navbar{font-weight:400}.navbar ul{display:inline;white-space:nowrap}.navbar li{word-spacing:-.125em}.navbox .navbar{display:block;font-size:100%}.navbox-title .navbar{float:left;text-align:left;margin-right:.5em;width:6em}.nowraplinks a,.nowraplinks .selflink{white-space:nowrap}#catlinks{line-height:1.25em}#catlinks li{line-height:1.25em;margin:.125em 0}#catlinks li:first-child{padding-left:.25em}@media only screen and (max-width:800px){}pre{background-color:#f3f4f5;white-space:pre;overflow:auto;margin:0}.mw-body h1,.mw-body-content h2,h3,h4{clear:both}.gas-bottom{display:inline-flex!important}.client-js .mw-content-ltr .mw-editsection-bracket:first-of-type,.client-js .mw-content-rtl .mw-editsection-bracket:not(:first-of-type){margin-right:0.25em;color:#54595d}.client-js .mw-content-rtl .mw-editsection-bracket:first-of-type,.client-js .mw-content-ltr .mw-editsection-bracket:not(:first-of-type){margin-left:8.25em;color:#54595d}.oo-ui-buttonElement{line-height:normal}.oo-ui-buttonElement>.oo-ui-buttonElement-button{cursor:pointer;display:inline-block;box-sizing:border-box;font-family:inherit;font-size:inherit;white-space:nowrap;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.oo-ui-buttonElement-framed>.oo-ui-buttonElement-button{vertical-align:top;text-align:center}.oo-ui-buttonElement>.oo-ui-buttonElement-button{position:relative;min-height:32px;font-weight:bold;text-decoration:none}.oo-ui-buttonElement.oo-ui-labelElement>.oo-ui-buttonElement-button{line-height:1}.oo-ui-buttonElement.oo-ui-labelElement>.oo-ui-buttonElement-button>.oo-ui-labelElement-label{line-height:1.42857143em}.oo-ui-buttonElement.oo-ui-widget-enabled>.oo-ui-buttonElement-button{transition:background-color 100ms,color 100ms,border-color 100ms,box-shadow 100ms}.oo-ui-buttonElement.oo-ui-widget-enabled>.oo-ui-buttonElement-button:focus{outline:1px solid transparent}.oo-ui-buttonElement-framed>.oo-ui-buttonElement-button{border-style:solid;border-width:1px;border-radius:2px;padding-left:12px;padding-right:12px}.oo-ui-buttonElement-framed.oo-ui-labelElement>.oo-ui-buttonElement-button{padding-top:5px;padding-bottom:5px}.oo-ui-buttonElement-framed.oo-ui-widget-enabled>.oo-ui-buttonElement-button{background-color:#f8f9fa;border-color:#a2a9b1}.oo-ui-buttonElement-framed.oo-ui-widget-enabled>.oo-ui-buttonElement-button:hover{background-color:#fff;color:#404244;border-color:#a2a9b1}.oo-ui-buttonElement-framed.oo-ui-widget-enabled>.oo-ui-buttonElement-button:focus{border-color:#36c;box-shadow:inset 0 0 0 1px #36c}.oo-ui-buttonElement-framed.oo-ui-widget-enabled>.oo-ui-buttonElement-button:active,.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-pressed>.oo-ui-buttonElement-button{background-color:#eaecf0;color:#000;border-color:#72777d;box-shadow:none}.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button{color:#36c}.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button:hover{background-color:#fff;border-color:#447ff5}.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button:focus{border-color:#36c;box-shadow:inset 0 0 0 1px #36c;outline:1px solid transparent}.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button:active,.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-pressed>.oo-ui-buttonElement-button,.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-active>.oo-ui-buttonElement-button,.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active>.oo-ui-buttonElement-button{background-color:#eff3fa;color:#2a4b8d;border-color:#2a4b8d;box-shadow:none}.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button{color:#fff;background-color:#36c;border-color:#36c}.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button:hover{background-color:#447ff5;border-color:#447ff5}.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button:focus{border-color:#36c;box-shadow:inset 0 0 0 1px #36c,inset 0 0 0 2px #fff;outline:1px solid transparent}.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button:active,.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-pressed>.oo-ui-buttonElement-button,.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-active>.oo-ui-buttonElement-button,.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active>.oo-ui-buttonElement-button{color:#fff;background-color:#2a4b8d;border-color:#2a4b8d;box-shadow:none}.oo-ui-labelElement .oo-ui-labelElement-label{box-sizing:border-box}@media (forced-colors:active) and (prefers-color-scheme:dark){}@media (forced-colors:active) and (prefers-color-scheme:dark){}@keyframes oo-ui-pendingElement-stripes{0%{background-position:-1.42857143em 0}100%{background-position:0 0}}.oo-ui-horizontalLayout>.oo-ui-widget{display:inline-block;vertical-align:middle}.oo-ui-horizontalLayout>.oo-ui-widget{margin-right:8px}.oo-ui-horizontalLayout>.oo-ui-layout:last-child,.oo-ui-horizontalLayout>.oo-ui-widget:last-child{margin-right:0}.oo-ui-horizontalLayout>.oo-ui-widget{margin-bottom:8px}.oo-ui-buttonWidget:last-child{margin-right:0}@supports (filter:drop-shadow(0 0 0)){.oo-ui-popupWidget{filter:drop-shadow(0 2px 1px rgba(0,0,0,0.3));transform:translateZ(0)}.oo-ui-popupWidget-popup{box-shadow:none}}.oo-ui-inputWidget:last-child{margin-right:0}.oo-ui-buttonInputWidget>button{margin:0;border:0;padding:0}@media screen and (min-width:0){}@keyframes oo-ui-progressBarWidget-slide{from{transform:translate(-100%)}to{transform:translate(300%)}}@media (prefers-reduced-motion:reduce){*,::before,::after{animation-delay:-0.01ms!important;animation-duration:0.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:0ms!important}}body{margin:0}hr{box-sizing:content-box;height:0;overflow:visible}@supports (text-decoration:underline dotted){abbr[title]{border-bottom:0;text-decoration:underline dotted}}pre{font-family:monospace,monospace}img{border:0}input{margin:0}.toctogglecheckbox:checked~ul{display:none}@media screen{html,body{height:100%}:focus{outline-color:#3366cc}html{font-size:100%}html,body{font-family:sans-serif}ul{list-style-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjEzIj4KCTxjaXJjbGUgY3g9IjIuNSIgY3k9IjkiIHI9IjIuNSIgZmlsbD0iIzIwMjEyMiIvPgo8L3N2Zz4K)}.mw-jump-link:not(:focus){display:block;position:absolute!important;clip:rect(1px,1px,1px,1px);width:1px;height:1px;margin:-1px;border:0;padding:0;overflow:hidden}.mw-editsection{font-family:sans-serif}.mw-body h1,.mw-body-content h2{margin-bottom:0.25em;padding:0;font-family:"Linux Libertine","Georgia","Times",serif;line-height:1.3}.mw-body h1:lang(ja),.mw-body-content h1:lang(ja),.mw-body-content h2:lang(ja),.mw-body h1:lang(he),.mw-body-content h1:lang(he),.mw-body-content h2:lang(he),.mw-body h1:lang(ko),.mw-body-content h1:lang(ko),.mw-body-content h2:lang(ko){font-family:sans-serif}.mw-body h1:lang(my),.mw-body-content h1:lang(my),.mw-body-content h2:lang(my){line-height:normal}.mw-body h1{font-size:1.8em}.vector-body{font-size:calc(1em*0.875);line-height:1.6}.vector-body h2{margin-top:1em;font-size:1.5em}.vector-body h3,.vector-body h4{margin-top:0.3em;margin-bottom:0;padding-bottom:0;line-height:1.6}.vector-body h3{font-size:1.2em}.vector-body h3,.vector-body h4{font-weight:bold}.vector-body h4{font-size:100%}.vector-body .toc h2{font-family:sans-serif;font-size:100%}.vector-body p{margin:0.5em 0}.mw-parser-output a.external{background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4KCTx0aXRsZT4KCQlleHRlcm5hbCBsaW5rCgk8L3RpdGxlPgoJPHBhdGggZmlsbD0iIzM2YyIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTEgMUg2bDIgMiAuMy4zLTQgNCAuNi43IDQtNEg5bDIgMlYxWk0yIDJoMnYxSDJ2N2g3VjhoMXYyYTEgMSAwIDAgMS0xIDFIMmExIDEgMCAwIDEtMS0xVjNhMSAxIDAgMCAxIDEtMVoiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4K);background-position:center right;background-repeat:no-repeat;background-size:0.857em;padding-right:1em}.mw-indicators{font-size:0.875em;line-height:1.6;position:relative;float:right}#siteNotice{font-size:0.8em;margin:24px 0;position:relative;text-align:center}.mw-portlet ul{list-style:none;margin:0}.vector-menu-portal{margin:0 0.6em 0 0.7em;padding:0.25em 0;direction:ltr}.vector-menu-portal .vector-menu-heading{display:block;color:#54595d;margin:0.5em 0 0 0.66666667em;border:0;padding:0.25em 0;font-size:0.75em;font-weight:normal;cursor:default}.vector-menu-portal .vector-menu-content{margin-left:0.5em;padding-top:0}.vector-menu-portal .vector-menu-content ul{list-style:none;margin:0;padding-top:0.3em}.vector-menu-portal .vector-menu-content li{margin:0;padding:0.25em 0;font-size:0.75em;line-height:1.125em;word-wrap:break-word}.vector-menu-portal .vector-menu-content li a{color:#0645ad}.vector-menu-portal .vector-menu-content li a:visited{color:#0b0080}.vector-search-box-inner{position:relative;height:100%}.vector-search-box-input{background-color:rgba(255,255,255,0.5);color:#000000;width:100%;height:2.15384615em;box-sizing:border-box;border:1px solid #a2a9b1;border-radius:2px;padding:5px 2.15384615em 5px 0.4em;box-shadow:inset 0 0 0 1px transparent;font-family:inherit;font-size:0.8125em;direction:ltr;transition-property:border-color,box-shadow;transition-duration:250ms;-webkit-appearance:none;-moz-appearance:textfield}.vector-search-box-inner:hover .vector-search-box-input{border-color:#72777d}.vector-search-box-input:focus,.vector-search-box-inner:hover .vector-search-box-input:focus{outline:0;border-color:#3366cc;box-shadow:inset 0 0 0 1px #3366cc}.vector-search-box-input::-webkit-input-placeholder{color:#72777d;opacity:1}.vector-search-box-input::placeholder{color:#72777d;opacity:1}.vector-search-box-input::-webkit-search-decoration,.vector-search-box-input::-webkit-search-cancel-button,.vector-search-box-input::-webkit-search-results-button,.vector-search-box-input::-webkit-search-results-decoration{display:none}.searchButton{background-color:transparent;position:absolute;top:1px;bottom:1px;right:1px;min-width:28px;width:2.15384615em;border:0;padding:0;cursor:pointer;font-size:0.8125em;direction:ltr;text-indent:-99999px;white-space:nowrap;overflow:hidden;z-index:1}.searchButton[name="go"]{background:no-repeat center/1.23076923em url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KCTx0aXRsZT4KCQlzZWFyY2gKCTwvdGl0bGU+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi4yIDEzLjZhNyA3IDAgMSAxIDEuNC0xLjRsNS40IDUuNC0xLjQgMS40LTUuNC01LjR6TTEzIDhBNSA1IDAgMSAxIDMgOGE1IDUgMCAwIDEgMTAgMHoiLz4KPC9zdmc+Cg==);opacity:0.67}#p-logo{width:10em;height:160px;margin-bottom:1em}#p-logo a{background-position:center center;background-repeat:no-repeat;display:block;width:10em;height:160px;text-decoration:none}.mw-footer{direction:ltr}.mw-footer ul{list-style:none;margin:0;padding:0}.mw-footer li{color:#202122;margin:0;padding:0.5em 0;font-size:0.75em}#footer-icons{float:right}#footer-icons li{float:left;margin-left:0.5em;line-height:2;text-align:right}#footer-info li{line-height:1.4}#footer-places li{float:left;margin-right:1em;line-height:2}}@media screen and (min-width:1000px){}@media screen and (min-width:1000px){}@media screen{body{background-color:#f6f6f6;overflow-y:scroll}.mw-body{background-color:#ffffff;color:#202122;direction:ltr;padding:1em}#p-personal{position:absolute;top:6px;right:0.75em;z-index:100}#p-personal ul{padding-left:10em}.mw-body,#mw-data-after-content{margin-right:1em}.mw-body{margin-top:-60px;border:2px solid #a7d7f9;border-right-width:1}.mw-body .firstHeading{overflow:visible}.mw-indicators{z-index:1}.vector-body{position:relative;z-index:0}#mw-page-base{background-color:#fbfbfb;background-image:linear-gradient(to bottom,#ffffff 50%,#f6f6f6 100%);background-position:bottom left;height:5em}#mw-head-base{margin-top:-5em;margin-left:10em;height:5em}#mw-navigation h2{position:absolute;top:-9999px}#mw-head{position:absolute;top:0;right:0;width:100%}#left-navigation{float:left;margin-left:10em;margin-top:2.5em;margin-bottom:-2.5em}#right-navigation{float:right;margin-top:2.5em}.vector-search-box{float:left;margin-right:0.5em;margin-left:0.5em}.vector-search-box form{margin:0.5em 0 0}.vector-search-box-inner{min-width:5em;width:20vw;max-width:20em}#mw-panel{position:absolute;top:0;width:10em;left:0}.mw-footer{margin-left:10em;margin-top:0;padding:0.75em}.mw-content-ltr{direction:ltr}.vector-menu-tabs-legacy{background-position:left bottom;float:left;height:2.5em;padding-left:1px}.vector-menu-tabs-legacy ul{float:left;height:100%;list-style:none;margin:0;padding:0}.vector-menu-tabs-legacy li{background-image:linear-gradient(to top,#77c1f6 0,#e8f2f8 1px,#ffffff 100%);background-position:left bottom;background-repeat:repeat-x;float:left;display:block;height:100%;margin:0;padding:0;line-height:1.125em;white-space:nowrap}.vector-menu-tabs-legacy li a{background-position:right bottom;color:#0645ad;box-sizing:border-box;display:block;float:left;height:3.07692308em;position:relative;padding-top:1.25em;padding-left:8px;padding-right:8px;font-size:0.8125em;cursor:pointer}.vector-menu-tabs-legacy .selected{background:#ffffff}.vector-menu-tabs-legacy .selected a,.vector-menu-tabs-legacy .selected a:visited{color:#202122;text-decoration:none}.vector-menu-tabs,.vector-menu-tabs a{background-image:linear-gradient(to bottom,rgba(167,215,249,0)0,#a7d7f9 100%);background-repeat:no-repeat;background-size:1px 100%}.vector-menu-portal .vector-menu-heading{background-image:linear-gradient(to right,rgba(200,204,209,0)0,#c8ccd1 33%,#c8ccd1 66%,rgba(200,204,209,0) 100%);background-position:center bottom;background-repeat:no-repeat;background-size:100% 1px}.vector-search-box h3{display:block;position:absolute!important;clip:rect(1px,1px,1px,1px);width:1px;height:1px;margin:-1px;border:0;padding:0;overflow:hidden}#mw-panel{font-size:inherit}#mw-panel nav:first-child{background-image:none}#mw-panel nav:first-child .vector-menu-heading{display:none}#mw-panel nav:first-child .vector-menu-content{margin-left:0.5em}@keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.vector-user-menu-legacy li{font-size:0.75em;float:left;margin-left:0.75em;padding-top:0.5em;line-height:1.16666667}.vector-user-menu-legacy #pt-anonuserpage{background-position:left 0.33333333em;background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KCTxnIGZpbGw9IiM1NDU5NWQiPgoJCTxwYXRoIGQ9Ik0xMCAxMWMtNS45MiAwLTggMy04IDV2M2gxNnYtM2MwLTItMi4wOC01LTgtNXoiLz4KCQk8Y2lyY2xlIGN4PSIxMCIgY3k9IjUuNSIgcj0iNC41Ii8+Cgk8L2c+Cjwvc3ZnPgo=);background-repeat:no-repeat;background-size:1.16666667em 1.16666667em;padding-top:0.5em;padding-left:1.5em}.vector-user-menu-legacy #pt-anonuserpage{color:#54595d}.vector-user-menu-legacy .vector-menu-content-list{display:flex;flex-wrap:wrap;flex-grow:1;justify-content:flex-end;align-items:baseline}}@media screen and (min-width:982px){.mw-body,#mw-head-base,#left-navigation,#mw-data-after-content,.mw-footer{margin-left:1em}.mw-body{padding:1.25em 1.5em 1.5em 1.5em}.mw-footer{padding:1.25em}#mw-panel{padding-left:0.5em}.vector-search-box{margin-right:1em}#p-personal{right:1em}}.mw-wiki-logo{background-image:url(data:image/png;base64,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)}@media screen{a.mw-selflink{color:inherit;font-weight:bold;text-decoration:inherit}a.mw-selflink:hover{cursor:inherit;text-decoration:inherit}a.mw-selflink:active,a.mw-selflink:visited{color:inherit}.mw-parser-output a.external{color:#3366bb}.mw-parser-output a.extiw:visited,.mw-parser-output a.external:visited{color:#663366}.mw-parser-output a.extiw:active,.mw-parser-output a.external:active{color:#bb6633}.plainlinks a.external{background:none!important;padding:0!important}.mw-body-content:after{clear:both;content:"";display:block}#catlinks{text-align:left}.catlinks{border:1px solid #a2a9b1;background-color:#f8f9fa;padding:5px;margin-top:1em;clear:both}.catlinks ul{display:inline;margin:0;padding:0;list-style:none}.catlinks li{display:inline-block;line-height:1.25em;border-left:1px solid #a2a9b1;margin:0.125em 0;padding:0 0.5em}.catlinks li:first-child{padding-left:0.25em;border-left:0}.mw-editsection{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.mw-editsection{font-size:small;font-weight:normal;vertical-align:baseline;line-height:1em}.mw-content-ltr .mw-editsection{margin-left:1em;margin-right:0}.mw-indicators{float:right}#siteNotice{position:relative;text-align:center;margin:0}#contentSub,#contentSub2{font-size:84%;line-height:1.2em;margin:0 0 1.4em 1em;color:#54595d;width:auto}a{text-decoration:none;color:#0645ad;background:none}a:not([href]){cursor:pointer}a:visited{color:#0b0080}a:active{color:#faa700}a:hover,a:focus{text-decoration:underline}a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}img{border:0;vertical-align:middle}hr{height:1px;background-color:#a2a9b1;border:0;margin:0.2em 0}h1,h2,h3,h4{color:#000;margin:0;padding-top:0.5em;padding-bottom:0.17em;overflow:hidden}h1,h2{margin-bottom:0.6em;border-bottom:1px solid #a2a9b1}h3,h4{margin-bottom:0.3em}h1{font-size:188%;font-weight:normal}h2{font-size:150%;font-weight:normal}h3{font-size:128%}h4{font-size:116%}p{margin:0.4em 0 0.5em 0}ul{margin:0.3em 0 0 1.6em;padding:0}li{margin-bottom:0.1em}pre{font-family:monospace,monospace}pre{background-color:#f8f9fa}pre{white-space:pre-wrap;overflow-x:hidden;word-wrap:break-word}table{font-size:100%}form{border:0;margin:0}@counter-style meetei{system:numeric;symbols:"꯰""꯱""꯲""꯳""꯴""꯵""꯶""꯷""꯸""꯹";suffix:") "}@counter-style santali{system:numeric;symbols:"᱐""᱑""᱒""᱓""᱔""᱕""᱖""᱗""᱘""᱙"}@counter-style myanmar_with_period{system:numeric;symbols:"၀""၁""၂""၃""၄""၅""၆""၇""၈""၉";suffix:"။ "}.mw-content-ltr ul{margin:0.3em 0 0 1.6em;padding:0}h1:lang(anp),h1:lang(as),h1:lang(bh),h1:lang(bho),h1:lang(blk),h1:lang(bn),h1:lang(gu),h1:lang(hi),h1:lang(kjp),h1:lang(kn),h1:lang(ks),h1:lang(ksw),h1:lang(ml),h1:lang(mr),h1:lang(my),h1:lang(mai),h1:lang(mnw),h1:lang(ne),h1:lang(new),h1:lang(or),h1:lang(pa),h1:lang(pi),h1:lang(sa),h1:lang(shn),h1:lang(syl),h1:lang(ta),h1:lang(te){line-height:1.6em!important}h2:lang(anp),h2:lang(as),h2:lang(bh),h2:lang(bho),h2:lang(blk),h2:lang(bn),h2:lang(gu),h2:lang(hi),h2:lang(kjp),h2:lang(kn),h2:lang(ks),h2:lang(ksw),h2:lang(ml),h2:lang(mr),h2:lang(my),h2:lang(mai),h2:lang(mnw),h2:lang(ne),h2:lang(new),h2:lang(or),h2:lang(pa),h2:lang(pi),h2:lang(sa),h2:lang(shn),h2:lang(syl),h2:lang(ta),h2:lang(te),h3:lang(anp),h3:lang(as),h3:lang(bh),h3:lang(bho),h3:lang(blk),h3:lang(bn),h3:lang(gu),h3:lang(hi),h3:lang(kjp),h3:lang(kn),h3:lang(ks),h3:lang(ksw),h3:lang(ml),h3:lang(mr),h3:lang(my),h3:lang(mai),h3:lang(mnw),h3:lang(ne),h3:lang(new),h3:lang(or),h3:lang(pa),h3:lang(pi),h3:lang(sa),h3:lang(shn),h3:lang(syl),h3:lang(ta),h3:lang(te),h4:lang(anp),h4:lang(as),h4:lang(bh),h4:lang(bho),h4:lang(blk),h4:lang(bn),h4:lang(gu),h4:lang(hi),h4:lang(kjp),h4:lang(kn),h4:lang(ks),h4:lang(ksw),h4:lang(ml),h4:lang(mr),h4:lang(my),h4:lang(mai),h4:lang(mnw),h4:lang(ne),h4:lang(new),h4:lang(or),h4:lang(pa),h4:lang(pi),h4:lang(sa),h4:lang(shn),h4:lang(syl),h4:lang(ta),h4:lang(te),h5:lang(anp),h5:lang(as),h5:lang(bh),h5:lang(bho),h5:lang(blk),h5:lang(bn),h5:lang(gu),h5:lang(hi),h5:lang(kjp),h5:lang(kn),h5:lang(ks),h5:lang(ksw),h5:lang(ml),h5:lang(mr),h5:lang(my),h5:lang(mai),h5:lang(mnw),h5:lang(ne),h5:lang(new),h5:lang(or),h5:lang(pa),h5:lang(pi),h5:lang(sa),h5:lang(shn),h5:lang(syl),h5:lang(ta),h5:lang(te),h6:lang(anp),h6:lang(as),h6:lang(bh),h6:lang(bho),h6:lang(blk),h6:lang(bn),h6:lang(gu),h6:lang(hi),h6:lang(kjp),h6:lang(kn),h6:lang(ks),h6:lang(ksw),h6:lang(ml),h6:lang(mr),h6:lang(my),h6:lang(mai),h6:lang(mnw),h6:lang(ne),h6:lang(new),h6:lang(or),h6:lang(pa),h6:lang(pi),h6:lang(sa),h6:lang(shn),h6:lang(syl),h6:lang(ta),h6:lang(te){line-height:1.4em}h2:lang(th){line-height:1.6}.toc{border:1px solid #a2a9b1;background-color:#f8f9fa;font-size:95%}.toc{display:table;padding:7px}.toc h2{display:inline;border:0;padding:0;font-size:100%;font-weight:bold}.toc .toctitle{text-align:center}.toc ul{list-style:none;margin:0.3em 0;padding:0}.tocnumber,.toctext{display:table-cell;text-decoration:inherit}.tocnumber{color:#202122}.mw-content-ltr .tocnumber{padding-left:0;padding-right:0.5em}.toctogglecheckbox{display:inline!important;position:absolute;opacity:0;z-index:-1}.toctogglespan{font-size:94%}.toctogglespan:before{content:" ["}.toctogglespan:after{content:"]"}.toctogglelabel{cursor:pointer;color:#0645ad}.toctogglelabel:hover{text-decoration:underline}.toctogglecheckbox:focus+.toctitle .toctogglelabel{text-decoration:underline;outline:dotted 1px;outline:auto -webkit-focus-ring-color}.toctogglecheckbox:checked+.toctitle .toctogglelabel:after{content:"show"}.toctogglecheckbox:not(:checked)+.toctitle .toctogglelabel:after{content:"hide"}.toc .toctitle{direction:ltr}.mw-content-ltr .toc ul{text-align:left}.mw-content-ltr .toc ul ul{margin:0 0 0 2em}}</style>
+<style>:root{--sdm-accent:gold}</style>
+<style>@media screen{}</style><style>.mw-editsection{unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection:before{content:"​"}.mw-editsection a{white-space:nowrap}.mw-editsection-divider{color:#54595d}@media screen and (min-width:982px){}</style><meta name=ResourceLoaderDynamicStyles content>
+<style>#ca-edit a{font-weight:bold}#catlinks li{display:inline;border-left:none;padding:0}#catlinks li:first-child{padding-left:0}#catlinks li:before{content:" | "}#catlinks li:first-child:before{content:""}</style>
+<meta name=generator content="MediaWiki 1.39.6">
+<meta name=format-detection content="telephone=no">
+<meta name=description content="Playstation Development Wiki - PS5, PS4, PS3, PS2, PS1, PSP, Vita Information">
+<meta name=viewport content="width=device-width, initial-scale=0.5">
+<meta name=viewport content="width=1000">
+<link rel=alternate type=application/x-wiki title=Edit href=https://www.psdevwiki.com/ps3/edit/Syscon_Error_Codes>
+<link rel=search type=application/opensearchdescription+xml href=https://www.psdevwiki.com/ps3/opensearch_desc.php title="PS3 Developer wiki (en)">
+<link rel=EditURI type=application/rsd+xml href="https://www.psdevwiki.com/ps3/api.php?action=rsd">
+<link rel=license href=https://www.gnu.org/licenses/old-licenses/fdl-1.2.txt>
+<link rel=alternate type=application/atom+xml title="PS3 Developer wiki Atom feed" href="https://www.psdevwiki.com/ps3/index.php?title=Special:RecentChanges&amp;feed=atom">
+<meta http-equiv=origin-trial content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv=origin-trial content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv=origin-trial content=A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9><meta http-equiv=origin-trial content=A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9><meta http-equiv=origin-trial content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv=origin-trial content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv=origin-trial content=A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9><meta http-equiv=origin-trial content=A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9><meta http-equiv=origin-trial content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv=origin-trial content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv=origin-trial content=A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9><meta http-equiv=origin-trial content=A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9><meta name=referrer content=no-referrer><link rel=icon href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABMLAAATCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQJyAAEBMgUAAS4EAQFGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMAAAAKD7EACw+rHAoOvGYICsOoAT6UoABxdVUIQ0gaGAAAAg4NAAAAAAAAAAAAAAAAAAAAAAABAENAGAB1fkACmKxXA6S1VA0zz54RF+b+DRHe/wVwyf8YvKr6S5s21WKAAJBOZAFFLDgAEQAAAAABBAAAAHqBWgChss4Avtr0Asnr8APT9vENdef8GB7q/xIZ4P8iUIbVaroixYDBBeqBvAL+eqwC9HOMBsZrRAp0Pg8CFwDC4JYB1fr/CNPr/ymyjOM6nl+7KWC62x4p7P8YIeL/QlxU+HKbANtvega+dYYFv5GQFuyofSf/pWIp+4ZKHW0A3/8eGtXOe1vKUsl8whD2gLUA/U1sd/kjMe//HSri/0dZZdmilxbaqXAl8aJaJe2pYy3xs2oz7bRsM7WzbDIy47AAAP+WAACawQARhsQBRYjFAJBWconhKjvv/yQy4v8TFrSHUEXAeVxJpKaIV1psuG8wSbRsMzC1bTMMsmoyAAAAAAAAAAAAAAAAAKKOJAAAAP8AOEjlhDFF7v8qO+L/FR7DoSw/7+UpO+3/FiHLqAAAgAkAAKEAAAAAAAAAAAAAAAAAAAAAAAAAAAAsTv4AOU/uADhQ7344T+7/L0Pj/xkjw6I0Se7nMkfu/yU01eQNEqckDhSrAAAAAAAAAAAAAAAAAAAAAAAAAAAAPlvtAD9Y7wA/We9+Pljv/zVL5P8cJ8SjOlLv6DlQ7v83TeHoKjzFKCo7xwAAAAAAAAAAAAAAAAAAAAAAAAAAAElg7QBFYfAARmLwfkVh8P87U+X/Ii/Hq0Fb8OtBW+//S2nswkZj3g9DXuAAAAAAAAAAAAAAAAAAAAAAAAAAAABJbO0ATGvyAExr8X5MavH/SGXu/0Fb5+5FYez7RGDn1Exr6UU/Wt0AXYD3AAAAAAAAAAAAAAAAAAAAAAAAAAAAVnXuAExr7ABPb+99SWbp/kFc4uU8VN26N07WcjdN0iEWLWgANErNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCD8wAmNcIANkzTLyQywFMWH7MmCQ2fCVp//wAAAFMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP5/AAD4DwAAAAMAAAAAAAAAAAAAAAAAAMABAAD4BwAA+AcAAPgHAAD4BwAA+A8AAPgfAAD4fwAA//8AAA=="><style>.sf-hidden{display:none!important}</style><link rel=canonical href=https://www.psdevwiki.com/ps3/Syscon_Error_Codes><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"></head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Syscon_Error_Codes rootpage-Syscon_Error_Codes skin-vector action-view skin-vector-legacy vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-language-alert-in-sidebar-disabled vector-feature-sticky-header-disabled vector-feature-sticky-header-edit-disabled vector-feature-table-of-contents-disabled vector-feature-visual-enhancement-next-disabled"><div id=mw-page-base class=noprint></div>
+<div id=mw-head-base class=noprint></div>
+<div id=content class="mw-body ve-init-mw-desktopArticleTarget-targetContainer" role=main>
+ <a id=top></a>
+ <div id=siteNotice></div>
+ <div class=mw-indicators>
+ </div>
+ <h1 id=firstHeading class="firstHeading mw-first-heading"><span class=mw-page-title-main>Syscon Error Codes</span></h1>
+ <div id=bodyContent class=vector-body>
 
+ <div id=contentSub></div>
+ <div id=contentSub2></div>
+ 
+ <div id=jump-to-nav></div>
+ <a class=mw-jump-link href=#mw-head>Jump to navigation</a>
+ <a class=mw-jump-link href=#searchInput>Jump to search</a>
+<h2><span class=mw-headline id=Description>Description</span></h2>
+<p>Syscon memory includes a 0x100-byte table for storing error codes. Each error code consists of 4 bytes and an additional 4 bytes for its timestamp. The table can hold up to 32 errors. When the table reaches its maximum capacity and a new error needs to be stored, Syscon will delete the oldest error.<br>
+</p>
+<h2><span class=mw-headline id=How_to_get_the_syscon_error_log>How to get the syscon error log</span></h2>
+<p>If the PS3 still boots to the XMB and is able to install and run applications, you can use programs such as those listed at the top of the Platform ID page.
+If the PS3 fails to boot, you can still get the error log by connecting a PC to the PS3's UART port using a "USB to TTLUART Adapter" and running the errlog command. There is also the clearerrlog command to clear the error table (handy to avoid confusion with old error codes that might have accumulated along the months/years and not related to the actual problem).
+</p>
+<h2><span class=mw-headline id=Error_log_format>Error log format</span></h2>
+<p>There are 2 error log formats that depends of the syscon type: for Mullion, or for Sherwood.<br>
+The error codes and the timestamps are stored in little endian (right to left)<br>
+The timestamps are in J2000 format (number of elapsed seconds since 2000/1/1 12:00:00). They can be converted to the standard Unix epoch and then summed 30 years minus 12 hours (or 946684800 seconds). Check the link to the right for information: <a target=_blank rel="nofollow noreferrer noopener" class="external text" href=https://stackoverflow.com/questions/35763357/conversion-from-unix-time-to-timestamp-starting-in-january-1-2000>1</a><br>
+If the battery was empty or removed when the error was triggered, the timestamp will be recorded as FFFFFFFF.<br>
+If the battery is replaced but the time is not configured in GameOS either manually or by network, the error log will seem to store timestamps starting with a date around 2005/12/31 00:00:00 (0x0B488680).<br>
+More info about error log timestamp formats and loops in the  Talk page<br>
+</p>
+<p><br>
+</p>
+<div style=float:left><div style=float:top>
+<div style="float:left;margin:5px;padding:3px;font-size:0.85em;background:#f7c7a7;border:3px double #c79777;box-shadow:4px 4px 2px 1px rgba(0,0,0,.2)">
+ <div style=margin-top:-3px;text-align:center;font-weight:bolder>Syscon Errorlog from CECHAxx, COK-001, CXR713120-201GB</div>
+ <pre style="min-width:330px;padding:5px;background:#f7f4f2;color:#000;border:1px dashed #c79777;line-height:1.1em">Offset(h) 00 01 02 03  04 05 06 07  08 09 0A 0B  0C 0D 0E 0F
+                                                 
+00003700  01 10 80 A0  01 10 80 A0  01 10 80 A0  01 10 80 A0
+00003710  01 10 80 A0  01 10 80 A0  04 10 80 A0  01 10 80 A0
+00003720  01 10 80 A0  01 10 80 A0  01 10 80 A0  01 10 80 A0
+00003730  01 10 80 A0  04 10 80 A0  01 10 80 A0  01 10 80 A0
+00003740  01 10 80 A0  01 10 80 A0  01 10 80 A0  01 10 80 A0
+00003750  01 10 80 A0  01 10 80 A0  04 30 09 A0  04 30 09 A0
+00003760  04 30 09 A0  04 30 09 A0  FF FF FF FF  01 10 80 A0
+00003770  01 10 80 A0  01 10 80 A0  01 10 80 A0  01 10 80 A0
+                                                 
+00003780  20 CF 6D 16  13 23 A7 16  3E D6 D9 16  87 13 2A 17
+00003790  17 3C 7C 17  E4 A2 A3 17  A2 15 D4 17  13 FB EB 17
+000037A0  CD 7D EF 17  33 85 EF 17  12 8C EF 17  A7 D9 FB 17
+000037B0  58 5E 0E 18  BB C9 66 18  CD 25 B5 18  49 C4 29 19
+000037C0  75 D5 F9 19  04 8B 61 1B  17 67 D0 22  2D 67 D0 22
+000037D0  03 07 6C 27  12 09 6C 27  FF FF FF FF  FF FF FF FF
+000037E0  FF FF FF FF  FF FF FF FF  F0 E7 27 16  06 BD 33 16
+000037F0  E5 DE 38 16  DD D4 5C 16  C4 AC 6C 16  EA C7 6D 16</pre>
+</div>
+<ul><li>In the error log sample above:
+<ul><li>Error log looped at least 1 time (1 errorcode FFFFFFFF)</li>
+<li>Timestamps are valid, and the time was configured</li>
+<li>Contains errors: A080<span style=background:#bbbbff> 1 </span><span style=background:#ff8080> 001 </span>, A080<span style=background:#bbbbff> 1 </span><span style=background:#ff8080> 004 </span>, A009<span style=background:#bbbbff> 3 </span><span style=background:#ff8080> 004 </span></ul></ul>
+</div></div>
+<div style=float:left><div style=float:top>
+<div style="float:left;margin:5px;padding:3px;font-size:0.85em;background:#f7c7a7;border:3px double #c79777;box-shadow:4px 4px 2px 1px rgba(0,0,0,.2)">
+ <div style=margin-top:-3px;text-align:center;font-weight:bolder>Syscon Errorlog from CECHHxx, DIA-001, CXR714120-301GB</div>
+ <pre style="min-width:330px;padding:5px;background:#f7f4f2;color:#000;border:1px dashed #c79777;line-height:1.1em">Offset(h) 00 01 02 03  04 05 06 07  08 09 0A 0B  0C 0D 0E 0F
+                                                 
+00003700  22 43 40 A0  34 30 40 A0  22 43 40 A0  34 30 40 A0
+00003710  22 43 40 A0  34 30 40 A0  FF FF FF FF  34 30 40 A0
+00003720  22 43 40 A0  34 30 40 A0  22 43 40 A0  34 30 40 A0
+00003730  22 43 40 A0  34 30 40 A0  22 43 40 A0  34 30 40 A0
+00003740  22 43 40 A0  34 30 40 A0  22 43 40 A0  34 30 40 A0
+00003750  22 43 40 A0  34 30 40 A0  22 43 40 A0  34 30 40 A0
+00003760  22 43 40 A0  34 30 40 A0  22 43 40 A0  34 30 40 A0
+00003770  22 43 40 A0  34 30 40 A0  22 43 40 A0  34 30 40 A0
+                                                 
+00003780  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF
+00003790  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF
+000037A0  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF
+000037B0  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF
+000037C0  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF
+000037D0  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF
+000037E0  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF
+000037F0  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF</pre>
+</div>
+<ul><li>In the errorlog sample above:
+<ul><li>Errorlog looped at least 1 time (1 errorcode FFFFFFFF)</li>
+<li>Timestamps are invalid</li>
+<li>Contains errors: A040<span style=background:#bbbbff> 4 </span><span style=background:#ff8080> 322 </span>, A040<span style=background:#bbbbff> 3 </span><span style=background:#ff8080> 034 </span></ul></ul>
+</div></div>
+<div style=clear:both></div>
+<div style=float:left><div style=float:top>
+<div style="float:left;margin:5px;padding:3px;font-size:0.85em;background:#f7c7a7;border:3px double #c79777;box-shadow:4px 4px 2px 1px rgba(0,0,0,.2)">
+ <div style=margin-top:-3px;text-align:center;font-weight:bolder>Syscon Errorlog from CECHLxx/Mxx/Pxx/Qxx, VER-001, SW-301</div>
+ <pre style="min-width:330px;padding:5px;background:#f7f4f2;color:#000;border:1px dashed #c79777;line-height:1.1em">Offset(h) 00 01 02 03  04 05 06 07  08 09 0A 0B  0C 0D 0E 0F
+                                                 
+00000900  31 21 80 A0  73 D4 50 0B  30 20 40 A0  89 D4 50 0B
+00000910  31 21 80 A0  8C D4 50 0B  30 20 80 A0  8E D4 50 0B
+00000920  30 21 80 A0  8E D4 50 0B  31 21 80 A0  8F D4 50 0B
+00000930  01 30 00 A0  FF FF FF FF  FF FF FF FF  FF FF FF FF
+00000940  30 20 80 A0  75 D1 50 0B  30 20 80 A0  78 D1 50 0B
+00000950  30 20 80 A0  B2 D1 50 0B  31 20 80 A0  B3 D1 50 0B
+00000960  30 21 80 A0  BD D1 50 0B  30 21 80 A0  D5 D1 50 0B
+00000970  30 21 80 A0  DF D1 50 0B  30 20 80 A0  E0 D1 50 0B
+00000980  31 21 80 A0  84 D2 50 0B  30 21 80 A0  DC D2 50 0B
+00000990  31 21 32 A0  4F D3 50 0B  31 20 40 A0  50 D3 50 0B
+000009A0  31 21 80 A0  51 D3 50 0B  30 21 80 A0  57 D3 50 0B
+000009B0  31 21 80 A0  59 D3 50 0B  31 21 80 A0  FF D3 50 0B
+000009C0  31 21 80 A0  05 D4 50 0B  30 20 80 A0  06 D4 50 0B
+000009D0  30 20 80 A0  07 D4 50 0B  31 21 80 A0  2D D4 50 0B
+000009E0  31 20 80 A0  3A D4 50 0B  30 21 80 A0  42 D4 50 0B
+000009F0  30 21 80 A0  72 D4 50 0B  31 21 80 A0  72 D4 50 0B</pre>
+</div>
+<ul><li>In the errorlog sample above:
+<ul><li>Errorlog looped at least 1 time (1 errorcode FFFFFFFF)</li>
+<li>Timestamps are valid, but the time was not configured</li>
+<li>Contains errors: A080<span style=background:#bbbbff> 2 </span><span style=background:#ff8080> 131 </span>, A040<span style=background:#bbbbff> 2 </span><span style=background:#ff8080> 030 </span>, A080<span style=background:#bbbbff> 2 </span><span style=background:#ff8080> 030 </span><br>A080<span style=background:#bbbbff> 2 </span><span style=background:#ff8080> 130 </span>, A000<span style=background:#bbbbff> 3 </span><span style=background:#ff8080> 001 </span>, A080<span style=background:#bbbbff> 2 </span><span style=background:#ff8080> 031 </span><br>A032<span style=background:#bbbbff> 2 </span><span style=background:#ff8080> 131 </span>, A040<span style=background:#bbbbff> 2 </span><span style=background:#ff8080> 031 </span></ul></ul>
+</div></div>
+<div style=float:left><div style=float:top>
+<div style="float:left;margin:5px;padding:3px;font-size:0.85em;background:#f7c7a7;border:3px double #c79777;box-shadow:4px 4px 2px 1px rgba(0,0,0,.2)">
+ <div style=margin-top:-3px;text-align:center;font-weight:bolder>Syscon Errorlog from CECH-42xx, PQX-001, SW3-304</div>
+ <pre style="min-width:330px;padding:5px;background:#f7f4f2;color:#000;border:1px dashed #c79777;line-height:1.1em">Offset(h) 00 01 02 03  04 05 06 07  08 09 0A 0B  0C 0D 0E 0F
+                                                 
+00000900  02 18 61 A0  FF FF FF FF  02 18 61 A0  FF FF FF FF
+00000910  02 18 61 A0  FF FF FF FF  02 18 61 A0  FF FF FF FF
+00000920  02 18 61 A0  FF FF FF FF  02 18 61 A0  FF FF FF FF
+00000930  02 18 61 A0  FF FF FF FF  02 18 61 A0  FF FF FF FF
+00000940  02 18 61 A0  FF FF FF FF  02 18 61 A0  FF FF FF FF
+00000950  02 18 61 A0  FF FF FF FF  02 18 61 A0  FF FF FF FF
+00000960  02 18 61 A0  FF FF FF FF  02 40 40 A0  FF FF FF FF
+00000970  34 30 40 A0  FF FF FF FF  02 40 40 A0  FF FF FF FF
+00000980  34 30 40 A0  FF FF FF FF  02 40 40 A0  FF FF FF FF
+00000990  34 30 40 A0  FF FF FF FF  02 40 40 A0  FF FF FF FF
+000009A0  34 30 40 A0  FF FF FF FF  02 40 40 A0  FF FF FF FF
+000009B0  34 30 40 A0  FF FF FF FF  02 40 40 A0  FF FF FF FF
+000009C0  34 30 40 A0  FF FF FF FF  FF FF FF FF  FF FF FF FF
+000009D0  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF
+000009E0  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF
+000009F0  FF FF FF FF  FF FF FF FF  FF FF FF FF  FF FF FF FF</pre>
+</div>
+<ul><li>In the errorlog sample above:
+<ul><li>Errorlog not looped (more than 1 errorcode FFFFFFFF)</li>
+<li>Timestamps are invalid</li>
+<li>Contains errors: A061<span style=background:#bbbbff> 1 </span><span style=background:#ff8080> 802 </span>, A040<span style=background:#bbbbff> 4 </span><span style=background:#ff8080> 002 </span>, A040<span style=background:#bbbbff> 3 </span><span style=background:#ff8080> 034 </span></ul></ul>
+</div></div><div style=clear:both></div>
+<h2><span class=mw-headline id=Error_code_format>Error code format</span></h2>
+<p>The error codes follows the format: <b><span style=background:#000000;color:#ffffff> A </span><span style=background:#909090;color:#ffffff> R </span><span style=background:#ffff80> ST </span><span style=background:#bbbbff> C </span><span style=background:#ff8080> ERR </span></b>, where:
+<p><b><span style=background:#000000;color:#ffffff> A </span></b> (Fixed)
+<b>A</b> = This is always "A"
+<p><br>
+<b><span style=background:#909090;color:#ffffff> R </span></b> (Reserved)
+<b>0-E</b> = Unknown
+</p>
+<ul><li><b>F</b> = Frequent error (For example, Motherboard Damage/Breakdown, etc.)</ul>
+<p><br>
+<b><span style=background:#ffff80> ST </span></b> (Step Number)
+<b>00-7F</b> = Step Number of the Power On Sequence (POS). This is the Power On Self Test (POST) process. If successful, the BOOT process begins, which loads the OS. 
+<p><br>
+<b>80</b> = Static State (Power ON). The console completed the POST and was in a static state. An error occurred during the PS3 boot-up process. If you encounter an error during gameplay, it may happen with Step No. 80. For instance, if your NEC/TOKINs are failing, you may experience 80 1002 errors.
+<p><br>
+<b>90</b> = Static State (Power OFF). The error happened when the PS3 was powering off. For example, if a problem causes the system to hang while shutting down the console will beep before powering off. An error with step no. 90 will be recorded in the errorlog.
+<p><br>
+<b>A0</b> = Immediately after SYSCON reset. When power is supplied to the PS3, it should enter Standby mode. Early "Phat" models will have a solid red LED illuminated to indicate Standby mode. The PS3 contains a Standby circuit that requires constant power so that it can wait for the user to turn on the console. Many other electronics also utilize this feature. This is also referred to as a Vampire circuit, as it uses constant power even when a user is not using the console. It enables the ability to turn it on remotely, thus mitigating the need to physically flip a switch.
+<p>The PS3 reset circuit comprises the SYSCON and its clock generating crystal, Bluetooth/WIFI card, front power/eject and LED panel, and thermal monitor ICs. The SYSCON must detect whether the console is being manually started with the power button or over Bluetooth using the controller, hence these modules must be powered. It is important to ensure proper functioning of the thermal monitors before releasing power to the Southbridge, CPU, or GPU. Neglecting this step could pose a fire hazard. The thermal monitors ICs serve as the PS3's fire alarms, and are critical safety equipment. 
+<p>If there is a hardware issue in the circuit, an error will occur after the SYSCON reset, preventing the console from powering on. Instead of a solid red LED, the front LED will flash red indefinitely upon plugging in the console, indicating an error with the standby circuit. There will also be associated error log in the syscon which can help identify the specific component causing the issue.
+<p>5v_MISC powers the reset circuit, consisting of SMD/SMT components and ICs that power the modules above. Please refer to the Service manual (if available) for details. In particular, in the COK-001 service manual, the circuit diagram is provided on page 23/45. From the diagram, it's evident that DC/DC converter IC6005 generates +3.3v_EVER, while IC6006 produces +1.8V_EVER, and IC6009 is responsible for generating +3.3V_THERMAL. These are the primary voltages utilized by the component in the reset circuit, such as the Wi-Fi/Bluetooth card necessary for initiating console startup remotely by pressing the PS button on the controller. 
+<p><br>
+<b><span style=background:#bbbbff> C </span></b> (Category)
+</p>
+<ul><li><b>1</b> = System Error</li>
+<li><b>2</b> = Fatal Error</li>
+<li><b>3</b> = Booting Error</li>
+<li><b>4</b> = Data Error</ul>
+<p><br>
+<b><span style=background:#ff8080> ERR </span></b> (Error)
+</p>
+<ul><li>This is a 3-Digit error code that gives specific information about the issue. For example, System error 002 (1002) means "RSX VRM Failure."</ul>
+<p><b>Discussion</b>
+</p>
+<hr>
+<p>The three-digit error code may repeat in other categories, but that does not necessarily indicate the same issue. System error <span style=background:#ff8080>Error code: 001</span> and Fatal error <span style=background:#ff8080>Error code: 001</span> don't mean the same thing. <span style=background:#bbbbff>Error code: 1</span><span style=background:#ff8080>Error code: 001</span> is "BE VRM Power Failure" and <span style=background:#bbbbff>Error code: 2</span><span style=background:#ff8080>Error code: 001</span> is "BE Error." We wouldn't be able to distinguish the <span style=background:#ff8080>error</span> just by referencing it. This alone lacks sufficient information to comprehend the problem. The <span style=background:#bbbbff>category</span> gives the <span style=background:#ff8080>error</span> context. To provide context, we use the 4-digit code <span style=background:#bbbbff>C</span><span style=background:#ff8080>ERR</span> to differentiate them from one another. 
+<p>Likewise, the <span style=background:#ffff80>Step Nump (ST)</span> provides context to the 4-digit code. For example, you can have a CELL VRM Power Failure occur while playing an intense game (Static State, Power on). That would generate an <span style=background:#ffff80>Error code: 80</span><span style=background:#bbbbff>Error code: 1</span><span style=background:#ff8080>Error code: 001</span> (Step number <span style=background:#ffff80>Error code: 80</span>). However, this error can also occur when the console is turned on, during the Power On Sequence Testing (POST), before it has a chance to start the boot loader, which loads the operating system, which in turn allows you to load the game. This time, it might generate error <span style=background:#ffff80>Error code: 10</span><span style=background:#bbbbff>Error code: 1</span><span style=background:#ff8080>Error code: 001</span>. Step number <span style=background:#ffff80>Error code: 10</span> is lower than Step number <span style=background:#ffff80>Error code: 80</span>, telling you this <span style=background:#bbbbff>Error code: 1</span><span style=background:#ff8080>Error code: 001</span> occurred earlier. The <span style=background:#bbbbff>Category</span> + <span style=background:#ff8080>Error</span> tells you "What" happened. The <span style=background:#ffff80>Step Number</span> tells you "when" it happened. It's building context that can help you figure out what is causing the error.
+<p>It's crucial to examine the entire error log, not just the 4-digit <span style=background:#bbbbff>C</span><span style=background:#ff8080>ERR</span>, to understand "why" the error occurred. In the previous example, the <span style=background:#000000;color:#ffffff>A</span><span style=background:#909090;color:#ffffff>Error code: 0</span><span style=background:#ffff80>Error code: 80</span><span style=background:#bbbbff>Error code: 1</span><span style=background:#ff8080>Error code: 001</span> may indicate an issue with the NEC/TOKIN Proadlizers, a type of capacitor in the CELL CPU's VRM (voltage regulation module). Conversely, <span style=background:#000000;color:#ffffff>A</span><span style=background:#909090;color:#ffffff>Error code: 0</span><span style=background:#ffff80>Error code: 10</span><span style=background:#bbbbff>Error code: 1</span><span style=background:#ff8080>Error code: 001</span> may result from various other factors, simply because there is a larger number of things that can go wrong. Therefore, it's possible that the NEC/TOKINs are not the source of the error.
+<p>All of this means you must be knowledgeable about the hardware to comprehend the errors stored in the SYSCON. Unfortunately, there is not a unique error code for every potential issue. For example, there is no error that can indicate if Capacitor C6900 is short. Nonetheless, there are a few exceptions, where a specific code typically conveys the same meaning. For example, a fuse that has blown "usually" causes said code. But we cannot dismiss the possibility that a cap blowing on the same line could also be the cause, however unlikely that may be.
+</p>
+<hr>
+<p><b>Examples</b>:<br>
+<p><span style=background:#000000;color:#ffffff>A</span><span style=background:#909090;color:#ffffff>Error code: 0</span><span style=background:#ffff80>Error code: 80</span><span style=background:#bbbbff>Error code: 1</span><span style=background:#ff8080>Error code: 002</span>
+</p>
+<ul><li>System Error 002 (RSX VRAM Power Fail) which occurred while the System was successfully powered On.</li>
+<li>1002 errors are known to be caused by faulty NEC/TOKINs, but other factors could also be involved. For additional information, refer to the Error Code section below.</ul>
+<p><span style=background:#000000;color:#ffffff>A</span><span style=background:#909090;color:#ffffff>Error code: 0</span><span style=background:#ffff80>Error code: 40</span><span style=background:#bbbbff>Error code: 3</span><span style=background:#ff8080>Error code: 034</span>
+</p>
+<ul><li>Fatal Booting Error 034 (RSX/CELL Communication Error) which occurred at step no. 40 (BitTraining), before the Power On Sequence has completed.</li>
+<li>3034 errors are often caused by defects on the BGA or Bump (among other issues). Experienced PS3 repair technicians have noted that it is almost exclusive to the RSX. Although we cannot completely exclude the possibility of a CELL BE BGA/Bump defect being the cause, it has been the exception to the rule. Time and experience have demonstrated that 3034 errors are primarily an RSX problem. A repair technician needs to decide which processor to reball/replace based upon the more likely candidate and proceed accordingly, using their judgement.</li>
+<li>See Error Code section below for more details.</ul>
+<p><span style=background:#000000;color:#ffffff>A</span><span style=background:#909090;color:#ffffff>Error code: 0</span><span style=background:#ffff80>Error code: 21</span><span style=background:#bbbbff>Error code: 3</span><span style=background:#ff8080>Error code: 013</span>
+</p>
+<ul><li>3013 errors are caused by Dead CELL BE CPU.</ul>
+<hr>
+<p>The following error code section will only list the last 4 numbers (category + error). However, remember the Reserved Area and Step Number can be useful to figure out "when" the error occurred and how frequent it is. The last four numbers are the most important for figuring out what specific error means, but you still need to figure out what it means in context of your issue. So you can diagnose the error and then fix it.
+</p>
+<h2><span class=mw-headline id=Error_codes>Error codes</span></h2>
+<h3><span class=mw-headline id=System_Errors>System Errors</span></h3>
+<hr>
+<h4><span id=1001_.28Power_CELL.29></span><span class=mw-headline id=1001_(Power_CELL)>Error code: 1001 (Power CELL)</span></h4>
+<ul><li>Components Involved:
+<ul><li>CELL (IC1001 on COK-001)</li>
+<li>NEC/TOKIN Proadlizers (C6140/C6141/C6142/C6143 on COK-001)</li>
+<li>Other nearby components of the power block</ul></ul>
+<p>This error may result from inadequate filtering on the CPU's core voltage (VDDC) or an unexpected system shutdown. Voltage ripple or noise within a certain range could cause errors before they worsen into a CELL VDDC Power Failure (3003). There are several SMD filters, but the most critical ones are the NEC/TOKIN Proadlizers (capacitors). Bad NEC/TOKINs are responsible for 1002 errors on the GPU, but diagnosing 1001 errors is not as straightforward. You must observe the console experiencing YLOD while under load and confirm the generation of a new 1001 error. Otherwise, the 1001 code may indicate the console was not turned off correctly.
+<p>1001 errors can be recorded automatically when the system experiences an unexpected shutdown or loss of AC power. These errors frequently arise during testing when the console is frequently turned on or off instead of being gracefully shut down. A0801001 errors alone cannot prove that NEC/TOKINs are failing. Such errors are regularly found in the log of properly functioning machines and are not cause for concern unless the system is unexpectedly shutting down on its own.
+<p>A machine that can power on but displays graphical artifacts or no video may lead to misinterpretation of 1001 errors. In such cases, the console must be turned off forcibly using the power switch at the back of Phat/Fat models or by pulling the power cord in Slim and Super Slim models. This may cause 1001 or 1004 errors, which can be ignored if they were not generated under normal circumstances. If a console is showing artifacts/GLOD, fix the larger problem first (usually a GPU problem requiring a reball/replacement). Only after that, if stress testing results in 1001 errors, should you troubleshoot the CPU NEC/TOKINs.
+<p>Anecdote: One console, with faulty CPU NEC/TOKINs, displayed an A0901001 error only during shutdown. The Last of Us, a strenuous game, showed no signs of typical bad NEC/TOKIN behavior, and the system remained stable. However, it remained in shutdown for a prolonged period, resulting in the YLOD (3 beeps and flashing red light). It required a reset to power back on. Replacing the NEC/TOKINs resolved the problem.
+</p>
+<h4><span id=1002_.28Power_RSX.29></span><span class=mw-headline id=1002_(Power_RSX)>Error code: 1002 (Power RSX)</span></h4>
+<ul><li>Components Involved:
+<ul><li>RSX (IC2001 on COK-001)</li>
+<li>NEC/TOKIN Proadlizers (C6229/C6230/C6231/C6232 on COK-001)</li>
+<li>Other nearby components of the power block</ul></ul>
+<p>This error is linked to inadequate filtering on the <b>RSX_VDDC</b> power line. A certain range of voltage ripple and noise can trigger this error before it becomes severe enough to cause an RSX_VDDC Power Failure (3004). YLOD's that lead to 1002 errors vary in length, lasting from 2 seconds to only happening during intense games. <br>
+<br>
+There are a number of SMD components used in filtering, but the major concern is the NEC/TOKIN proadlizers (capacitors). 1002 errors indicate faulty NEC/TOKINs.
+</p>
+<h4><span id=1004_.28Power_AC.2FDC.29></span><span class=mw-headline id=1004_(Power_AC/DC)>Error code: 1004 (Power AC/DC)</span></h4>
+<ul><li>Components Involved:
+<ul><li>Power Supply</ul></ul>
+<p>When a console loses AC power, it may generate error A0801004. During the shutdown sequence, voltage regulators are turned off sequentially in reverse order to the Power On Sequence (POS). This allows components enough time to enter a power off state. It helps to prevents data corruption and voltage spikes or discharges that can damage sensitive components. 1004 errors commonly occur in machines that can power on but have graphical artifacts or no video, also known as GLOD. In such cases, the user has no choice but to improperly power off. Forcing a shutdown using the power rocker at the back of the console (for Phat models), or by pulling the power cord (for slim and super slim models) will cause an unexpected loss of AC power and prevent the SYSCON from completing the shutdown sequence. 
+<p><br>
+This error may be disregarded if it occurred due to abnormal circumstances, such as a power outage or accidental unplugging. Since it did not result from a hardware malfunction, it is not a significant concern. If a console displays artifacts or the GLOD, the main issue should be addressed first, typically involving a GPU problem requiring a reball or replacement. Afterward, if 1004 errors reoccur, the AC/DC line, PSU, and its connection to the DC-DC converters should be diagnosed.
+</p>
+<h4><span class=mw-headline id=1005>Error code: 1005</span></h4>
+<p>On an NPX-001 Super Slim Motherboard I was experiencing an A0091005 error, started looking at the CELL power rail and started replacing components, went to replace the Aluminum Polymer Caps and after replacing all 5 on the Cell Side the error was gone. Seems to be a super slim error only but more testing will be needed to be done to see if it occurs on other motherboards. Another user reported being able to fix the same error code by replacing the same capacitors. Sometimes this error will be paired with a 3003 error. I also had a PQX-001 board with A0801005 followed by A0043005, found a short on the RSX on what I believe to be FBVDDQ for the 28nm, I was unable to fix this issue as after removing every component the line was still short.
+</p>
+<h4><span id=1103_.28Thermal_Alert_SYSTEM.29></span><span class=mw-headline id=1103_(Thermal_Alert_SYSTEM)>Error code: 1103 (Thermal Alert SYSTEM)</span></h4>
+<ul><li>Components Involved:
+<ul><li>CELL</li>
+<li>CELL temperature monitor (only in mullion syscons, the CELL temperature monitor for PS3 slims and super slims are unable to send this error code)</ul></ul>
+<p>Syscons have a pad/pin specifically for this signal. It was given an official generic name (not indicating anything that triggers it) because several components can send it. In the first PS3 models (with mullion syscon?), the signal can be sent by CELL or the CELL temperature monitor using the official function names SYS_THR_ALRT or THERMAL_OVERLOAD.<br>
+<p>But this electrical design is not specific for the PS3, there could be other devices based on the IBM CELL, and developed by SONY, where this error code is sent by other components, which could have more than one CELL so in general we could say this error code indicates one (or more) of the CELL processors (and maybe other components not present in retail PS3 models or his temperature monitor chips) is overheating.
+<p>At least 3 consoles that had CPU trace damage resulting from failed IHS delid attempts exhibited A0801103 and A0902203 errors.
+</p>
+<h4><span id=1200_.28Thermal_CELL.29></span><span class=mw-headline id=1200_(Thermal_CELL)>Error code: 1200 (Thermal CELL)</span></h4>
+<ul><li>Components Involved:
+<ul><li>CELL</ul></ul>
+<p>CPU Overheat. This is a common error. The usual culprit is failed Thermal Interface Material (TIM). As the material ages it "dries" allowing air inside. Air is a heat insulator, reducing the TIM's ability to transfer enough heat away from the processor. The system fan will steadily get louder over time until it cannot keep up. Once the processor approaches it's Thermal Shutdown Temperature a Yellow LED begins flashing on the console (Early Phat Models). Once it reaches the Thermal Shutdown Temperature the console will beep three times and hard shutdown, flashing red until the console is unplugged and the error state reset. Error 1200 is generated in the SYSCON errorlog.
+<p>First be sure the system fan is working. If so, apply new TIM Between the Internal Heat Spreader (IHS) and Heatsink (HS). If that does not resolve the problem, carefully remove the IHS (Delid) and replace the TIM between the IHS and processor DIE.
+<p>If that still doesn't work, it could be an issue with the temperature monitor chip (IC1101). Beyond that, some users have noted that dead CPU's can throw error 1200. However, that's the limit of our current understanding. It could be dead, or have another unexplained issue, but usually reflowing or reballing is the last ditch effort to revive such a console.
+</p>
+<h4><span id=1201_.28Thermal_RSX.29></span><span class=mw-headline id=1201_(Thermal_RSX)>Error code: 1201 (Thermal RSX)</span></h4>
+<ul><li>Components Involved:
+<ul><li>RSX</ul></ul>
+<p>GPU Overheat. This is the same as error 1200 above, except it's for the GPU. The same repair steps apply, except it's Temperature Monitor Chip is IC2101. This error is rare. Out of hundreds of consoles and years of user reports this error has only occurred when the user forgot to replace the RSX heatsink when testing the console. It has not been reported under normal circumstances. The RSX tends to fail long before the TIM degrades to the point thermal shutdown is reached.
+</p>
+<h4><span id=1203_.28Thermal_CELL_VR.29></span><span class=mw-headline id=1203_(Thermal_CELL_VR)>Error code: 1203 (Thermal CELL VR)</span></h4>
+<ul><li>Components Involved:
+<ul><li>CELL voltage regulators</li>
+<li>Temperature Monitors</ul></ul>
+<p>Thermal monitor No Command tag Specified Error when the thermal monitor was communicating with the SYSCON. Or Thermal Shutdown (Hardware Initialized). Possibly because the thermal monitor is failing or the connections on it are iffy. Has been seen with CPU or GPU Overheats (1200 or 1201) . A0801103/A0902203 seen from CPU Trace damage (failed delid). Sometimes seen with 1001/1002 combo associated with Bad NEC/TOKINs (Rare). Or when the PS3 was powered on when hot (after heatgun).
+<p>Some PS3 motherboards (TMU-520, COK-001, COK-002), have a temperature monitor located somewhere in the CELL power block. The other retail PS3 motherboard models doesn't measure the temperature of the CELL VR
+<p>All the PS3 temperature monitor chips have a internal thermal sensor integrated + 2 pins for an optional external sensor. The temperature monitors for CELL and RSX are configured to use the external sensor, but this one for CELL VR probably uses the internal
+</p>
+<h4><span id=1204_.28Thermal_South_Bridge.29></span><span class=mw-headline id=1204_(Thermal_South_Bridge)>Error code: 1204 (Thermal South Bridge)</span></h4>
+<ul><li>Components Involved:
+<ul><li>South Bridge</ul></ul>
+<h4><span id=1205_.28Thermal_EE.2FGS.29></span><span class=mw-headline id=1205_(Thermal_EE/GS)>Error code: 1205 (Thermal EE/GS)</span></h4>
+<ul><li>Components Involved:
+<ul><li>CXD2953AGB or CXD2972GB</li>
+<li>See also: Emotion Engine / Graphics Synthesizer</ul></ul>
+<p>This error is specific for COK-001/CXD2953AGB (with full PS2 hardware compatibility, EE+GS) or COK-002/CXD2972GB (with partial PS2 hardware compatibility, GS only)
+</p>
+<h4><span id=1301_.28CELL_PLL_Unlock.29></span><span class=mw-headline id=1301_(CELL_PLL_Unlock)>Error code: 1301 (CELL PLL Unlock)</span></h4>
+<p>Has been reported in a console where the CPU die was chipped during a delid attempt gone wrong. The console exhibited a Green Light of Death (GLOD) and shutting down periodically with A0801301.
+<p>On another console 1301 occurred after both the CPU and RSX were reballed. The reball of cell likely failed, or damaged it.
+<p>On a third console it was reported after nearly every chip on the Motherboard was heat gunned. They probably didn't achieve the necessary temperatures to reflow the CPU, and if they did they probably damaged it by using too much heat.
+<p>In all 3 cases the CPU was damaged or heated in some way.
+<p>401001/401301/402120 occured when IC6002 pins 17/18 were accidentally short. It blew out C6025 &amp; PS6001. Dead CPU possible. Double check CELL_PLL Voltage and clock generators. Rare code.
+<p>Occured while overvolting a 40nm CXD5300 RSX to achieve a higher overclock on a CECH-2501A. An A0801002/A0801301 occured when the voltage regulation module exceeded it's design specifications. SB UART reported there was a Busy loop detected, suggesting that poor filtering under these extreeme conditions can cause a PLL unlock. It did not occur on every YLOD. Note, the 25xx models do not have NEC/Tokins.
+</p>
+<h4><span id=14FF_.28Check_Stop.29></span><span class=mw-headline id=14FF_(Check_Stop)>Error code: 14FF (Check Stop)</span></h4>
+<p>This error can occur when the console was on at the time the YLOD occurred. On consoles exhibiting this error, subsequent attempts to start the console resulted in a GLOD with 1601/1701 errors, or a YLOD within 2 seconds. SYSCON errors usually show one A0801601/A0801701 occurring at the same timestamp, followed thereafter by 3034/4xxx errors for all subsequent attempts to PWR it on. Or it'll GLOD and throw more 1701/1601's. The working theory is that there is a precarious solder joint (BGA or bump defect) teetering on the edge of breaking. It'll soon switch to 3034 with or without 4xxx errors.
+<p>Complicating the issue is the fact that sometimes people will get a 1301 or 1802 also. It likely has to do with where the joints are failing and it's involving those sub systems briefly before fully breaking.
+<p>Unlike Livelocks, which can be caused by both hardware and software conditions, Checkstops are a hardware issue. A checkstop occurs when the CPU or GPU, cache, memory, or I/O bus controller, finds something in an impossible state (impossible unless the Hardware is broken). The error isn't identified as a particular bus transfer in progress, or the CPU/GPU detects the console is stuck (frozen, no progress being made with that operation). When nothing can be done for a long enough period of time, the checkstop errors is logged and BE ATTENTION is driven High. SYSCON immediately shuts the console down with error A08014FF and A0801701.
+<p>The most likely cause of the error is a failing GPU (RSX) solder joint (BGA or Bumps). A distant second is a failing CPU (CELL) solder joint (BGA).
+</p>
+<h4><span id=1601_.28CELL_Livelock_Detection.29></span><span class=mw-headline id=1601_(CELL_Livelock_Detection)>Error code: 1601 (CELL Livelock Detection)</span></h4>
+<p>CPU is deadlocked and cannot proceed. Some kind of error occurred, preventing a process from completing. It is the software equivalent of trying to pass someone in a hallway and you both keep choosing the same direction to swerve. Now imagine you had exactly 30s to make it to the other end of the hallway to catch an elevator, and it takes 29s to get there. Neither of you can pass and miss your elevators because of it. Now imagine you were supposed to pass an envelope to a person on the 3d floor, who had 30s to read it and enter it in a spreadhseet. Now he misses his deadline too. And imagine the entire organization was micromanaged like this. One disruption can cause the whole operation to grind to a halt! That's kinda how this works.
+<p>Basically this means the console froze and had to reboot. In the PS3 this is often preceded by graphical artifacting. The cause is often a solder joint on the RSX (BGA or Bumps). Generally these errors are seen in the early stages of a GPU failure. However CPU failures cannot be ruled out. They are just less likely.
+<p>Speculation:
+<p>As the impedance of propagating solder cracks increases, the digital logic core has a harder time calibrating the FlexIO during BitTraining. Once impedance reaches the limits of the compensation network, interference causes random issues during software execution. LiveLock conditions cause BE Attention signal to be driven High and the SYSCON shuts the console down (YLOD) with errors A0801601 and A0801701.
+<p>As the console cools the microscopic gaps in the solder can be physically reconnected by thermal warping. Warping is due to differences in the Coefficients of Thermal Expansion (CTE) between materials in the motherboard and processor. This expansion and contraction can reconnect the solder joints just enough to allow the console to boot. Or it may disconnect them. 
+</p>
+<ul><li>If they reconnected, the console will boot until it experiences another 1601/1701 event.</li>
+<li>It they do not reconnect, the console cannot complete BitTraining and will fail in POST with error A0403034. Often with an associated Data error, such as A0404401 (if the broken solder joint affected a Data line on one of the SPI lines). If there is no Data error, the broken joint only affected the voltage for the SPI line. Either RSX_VDDR or YC_RC_VDDIO.</ul>
+<p>If a YLOD turns into a GLOD after reball/reflow then 1601 (with or without 1701) could mean the RSX RAM was damaged. This is a loose association based on a few user reports.
+</p>
+<h4><span id=1701_.28CELL_BE_ATTENTION.29></span><span class=mw-headline id=1701_(CELL_BE_ATTENTION)>Error code: 1701 (CELL BE ATTENTION)</span></h4>
+<p>BE ATTENTION is an active-high output flag sent by the CPU to the SYSCON. During initialization &amp; configuration it is used to request an operation by the SYSCON. When ATTN goes High the syscon reads the SPI Status Register to determine the cause of the Attention signal. It remains high until software resets the condition that caused it.
+<p>After Power On Reset the BE attention signal is driven low and is supposed to stay there! If there is a Checkstop error (14FF), Livelock Detection (1601), or PLL Unlock (1301) the CPU enters a fault condition and raises the Attention signal (1701) during operation. The SYSCON sees this and immediately shuts the console down with error code A0801701 and usually another error indicating the cause. One common way this happens is when a solder connection breaks while the system is on. This could be the BGA (Ball Grid Array) or the Solder Bumps under the die.
+<p>Going into more detail, BE Attention is used during Power On Reset (POR)...
+</p>
+<ul><li>To load CPU VID voltage from the VRM internal registers.</li>
+<li>To Write configuration-ring data (Important CPU Config settings that should only be modified at boot, otherwise errors can occur).</li>
+<li>To calibrate the FlexIO interface (BitTraining).</ul>
+<p>If Attention occurs during the Power ON State (Step# 80) it indicates an error condition. Basically, something is flagged by the Processor as abnormal. It's forced to attempt to resolve the problem before it can continue with whatever it was trying to do. If the error condition cannot be resolved, the CPU sends the ATTENTION signal to the SYSCON. The SYSCON immediately shuts off the console, then reads the SPI Status Register to determine the cause. Then it records the A0801701 in it's errorlog along with the specific cause (if it determined one). Errors that can cause the Attention include:
+</p>
+<ul><li>Unresolved Checkstop errors (14FF)</li>
+<li>Livelock Detection (1601)</li>
+<li>PLL Unlock Condition (1301)</li>
+<li>BGA/Bump Defect that occurs while the Console was On (Step# 80). Subsequent attempts to power on the console would result in 3034/4xxx errors.</ul>
+<p>A user get this error code with a damaged hard drive. He was transferring some games via FTP, and his console turned off with YLOD. When he tried to turn on again, he get a GLOD. Problem was fixed just by changing the HDD.
+<p>1701 has been reported from using homebrew apps that caused a software conflict. Uninstalling the software can resolve the issue. It that's not possible because the system is locked up, it may be necessary to restore the operating system (OS).
+<p>1701 and 1601 can also occur when exiting heavier games on a dex firmware paired with multiman due to I'm guessing dex and webman allocating 2 more megabytes of ram [as shown by the webman fps counter allocating 18 to xmb on cex and 20 on dex], interfering with the syscon fan curve causing it to get "stuck" resulting in overheating and causing a ylod upon exiting the game though the console reboots fine which may trick people into thinking webman or dex overheats their consoles. I haven't looked into this issue too much but converting from cex to dex has fixed the issue and the issue arose when converting to dex so I belive there are fringe cases where this is an issue
+</p>
+<h4><span id=1802_.28RSX_Initialization.29></span><span class=mw-headline id=1802_(RSX_Initialization)>Error code: 1802 (RSX Initialization)</span></h4>
+<p>A0801802 occurring after the console has booted (step# 80) and causes BE Attention (1701) alarm raised when a Checkstop error (14FF) occurs. Likely the 1802 was the hardware failure that caused the checkstop error. That causes BE ATTENTION to be driven High and the SYSCON shuts the console down with A0801802, A08014FF, and A0801701. That makes sense because the CPU couldn't continue with it's process when the RSX interrupt occurred. These errors have been seen in consoles that were repaired by an RSX reball/replacement.
+<p>1802 is confirmation that the RSX was involved, if there's any doubt about what's cauing a 3034.
+</p>
+<h4><span id=1900_.28RTC_Voltage.29></span><span class=mw-headline id=1900_(RTC_Voltage)>Error code: 1900 (RTC Voltage)</span></h4>
+<p>RTC voltage
+</p>
+<h4><span id=1901_.28RTC_Oscilator.29></span><span class=mw-headline id=1901_(RTC_Oscilator)>Error code: 1901 (RTC Oscilator)</span></h4>
+<p>RTC oscilator
+</p>
+<h4><span id=1902_.28RTC_Access.29></span><span class=mw-headline id=1902_(RTC_Access)>Error code: 1902 (RTC Access)</span></h4>
+<p>RTC access
+<p><b>1b01 (CELL Initialization)</b>
+<p>CPU Thermal Sense Error. Thermal Monitor (IC1101) external sense line. Check C1103, R1106/7 &amp; replace IC1101 (COK-00x) before reballing CPU. If all else fails the CPU's thermal diode is dead.
+<p>This error tends to occur at step number 20, during core intialization.
+<p>Suspected that removing R1106/7 or the CPU iteslf will cause A0201b01/A0A02030 errors. Hasn't been confirmed through sabotauge testing.
+</p>
+<h4><span id=1b02_.28RSX_Initialization.29></span><span class=mw-headline id=1b02_(RSX_Initialization)>Error code: 1b02 (RSX Initialization)</span></h4>
+<p>RSX Thermal Sense Error. Thermal Monitor (IC2101) external sense line. Check C2103, R2101/2 &amp; replace IC2101 (COK-00x) before reballing/Replacing RSX. If all else fails the GPU's thermal diode is dead. 
+<p>This error tends to occur at step number 20, during core intialization.
+<p>Confirmed that removing R2101/2 or the GPU iteslf causes A0201b02/A0A02031 errors.
+</p>
+<hr>
+<h3><span class=mw-headline id=Fatal_Errors>Fatal Errors</span></h3>
+<hr>
+<ul><li>This fatal error codes seems to be repeated up to 3 times for 3 special cases, as example, errors <b>20</b>03, <b>21</b>03, and <b>22</b>03 are related with southbridge, the only thing that changes in the error code is the second digit (located immediately after the category 2). If at some point we find what means that second digit we can join the wiki page sections together (with titles: "2001 &amp; 2101", "2002 &amp; 2102", "2003 &amp; 2103", etc...)<br></ul>
+<p>In other words, there are 3 groups: <b>20xx</b> (composed by 13 errors), <b>21xx</b> (composed by 13 errors), and <b>22xx</b> (composed by 1 error). See <i>Discussion</i>
+</p>
+<h4><span id=2001_.28CELL.29></span><span class=mw-headline id=2001_(CELL)>Error code: 2001 (CELL)</span></h4>
+<p>CELL (IC1001)
+</p>
+<h4><span id=2002_.28RSX.29></span><span class=mw-headline id=2002_(RSX)>Error code: 2002 (RSX)</span></h4>
+<p>RSX (IC2001)
+</p>
+<h4><span id=2003_.28South_Bridge.29></span><span class=mw-headline id=2003_(South_Bridge)>Error code: 2003 (South Bridge)</span></h4>
+<p>South Bridge Error (IC3001)
+</p>
+<h4><span id=2010_.28Clock_Subsystems.29></span><span class=mw-headline id=2010_(Clock_Subsystems)>Error code: 2010 (Clock Subsystems)</span></h4>
+<p>Clock Generator Error (IC5001)
+</p>
+<h4><span id=2011_.28Clock_CELL.29></span><span class=mw-headline id=2011_(Clock_CELL)>Error code: 2011 (Clock CELL)</span></h4>
+<p>Clock Generator Error (IC5003)
+</p>
+<h4><span id=2012_.28Clock_CELL.29></span><span class=mw-headline id=2012_(Clock_CELL)>Error code: 2012 (Clock CELL)</span></h4>
+<p>Clock Generator Error (IC5002)
+</p>
+<h4><span id=2013_.28Clock_CELL.2C_RSX.2C_South_Bridge.29></span><span class=mw-headline id=2013_(Clock_CELL,_RSX,_South_Bridge)>Error code: 2013 (Clock CELL, RSX, South Bridge)</span></h4>
+<p>Clock Generator Error (IC5004)
+<p><b>2014 (Unknown)</b>
+<p>Bad GPU NEC/TOKINs if assiciated with 1002. Was reported in a DIA-002 with other errors. A0091002/A0102014, A0101002/A0102113, and also had A0101002 + 10x A0202120s. Presumably caused by failed RSX tokins.
+</p>
+<h4><span id=2020_.28HDMI.29></span><span class=mw-headline id=2020_(HDMI)>Error code: 2020 (HDMI)</span></h4>
+<p>HDMI Error (IC2502)
+<p>This code is not diagnostic on its own. When coinciding with 1601/1701, 14FF, 1301, and 3034 it usually means a GPU issue. When coinciding with a 1002 it's usually NEC/TOKIN proadlizers. When they occur in bunches AND without more diagnostic codes, all in the same power on, it may be the MultiAV or HDMI Transmitter ICs. The presence of other codes give you context to their meaning.
+<p><b>2021 (Unknown)</b>
+<p>Rare code. Occurred in a CECHBxx model with 10x A0202121 occuring throughout the power on sequencing before starting the bootloader. It did not prevent boot before the console overheated. Errorlog shows two 10x 2121 + 1200 error combos. One of which also had A0802021 coinside. Log shows the console originally had a NEC/Tokin issue (A0801002) before this started. While this is an Unknown error combo, it may be similar to 2120. On another console, timestamps showed A0101002 occurred 1st and then 10x 2120's occurred over the next 10 seconds. Replacing tokins fixed that console. It's possable this is a similar situation, but with a new code.
+</p>
+<h4><span id=2022_.28DVE.29></span><span class=mw-headline id=2022_(DVE)>Error code: 2022 (DVE)</span></h4>
+<p>DVE Error (IC2406, CXM4024R MultiAV controller for analog out)
+<p>This error may be normal in an otherwise working console. They have been observed in th errorlogs of perfectly operational units and can occur naturally from AV issues. 
+<p>This error has been observed with no video out using HDMI on a Samsung Smart TV. They reproduced the error by making the TV detect another console first (a PS4), turn off the TV, swap the HDMI cable from the PS4 to the PS3, and turning back on the TV.
+<p>This error is also present when the console produces graphical artifacts on the screen. The console freezes and cannot be used, forcing the user to turn off the console. This produces the 2022 error code and is an early sign of GLOD.
+<p>It is often seen coinciding with 1601/1701, 14FF, 1301, and 3034 in case of Bad GPU (Common). DVE or HDMI Transmitter possible. If so, multiple errors at the same timestamp allow you to distinguish between causes.
+<p>This error could also show when opening and closing a PS2 emulated game in a CFW console, both in Evilnat and Rebug. The errors would be in dyads. If this is the case there is no reason of concern.
+</p>
+<h4><span id=2024_.28AV.29></span><span class=mw-headline id=2024_(AV)>Error code: 2024 (AV)</span></h4>
+<p>This code is not diagnostic on its own. When coinciding with 1601/1701, 14FF, 1301, and 3034 it usually means a GPU issue. When coinciding with a 1002 it's usually NEC/TOKIN proadlizers. When they occur in bunches AND without more diagnostic codes, all in the same power on, it may be the MultiAV or HDMI Transmitter ICs. The presence of other codes give you context to their meaning. 
+<p>This error tends to cause a delayed Yellow Light Of Death (10s - 1min). Sometimes described as a Green Light Of Death (GLOD) or Red Light Of Death (RLOD). 
+<p>2124 and 2024 errors occuring in random bunches registering several per power on attempt been fixed by replacing both the AV and HDMI encoders. One user reported 2024/2124 errors resolved by replacing the HDMI encoder. Another removed the HDMI encoder and tested the console without it. That console primarily filled the errorlog with 2124 errors, but a few 2024's as well. So it is unclear if 2124 is specific to the HDMI Encoder or AV Encoder. It seems it could be either.
+<p>A0A02024 Occurred in a KTE-001 with a failed Bluetooth/Wifi module step-up voltage converter. A0002024/A0002124/A0003001 occured when attempting to power without 12v connected. A0A02024 also recorded. When 12v was connected the same codes would occur at step no. 09 instead of 00.
+</p>
+<h4><span id=2030_.28Thermal_Sensor.2C_CELL.29></span><span class=mw-headline id=2030_(Thermal_Sensor,_CELL)>Error code: 2030 (Thermal Sensor, CELL)</span></h4>
+<ul><li>Components Involved:
+<ul><li>CELL</li>
+<li>CELL Temperature Monitor (IC1101 on COK-001)</ul></ul>
+<p>Thermal Monitor (IC1101) external sense line. Check C1103, R1006/7 &amp; replace IC1101 before reballing CPU. If all else fails the CPU's thermal diode is dead. Was seen in a PS3 that was destroyed by a heatgun. Also had A0A02031/2033 &amp; A0902031. 
+<p>Speculation: 2030-33 errors reported in case of dodgy PWR/EJT daughter board.
+</p>
+<h4><span id=2031_.28Thermal_Sensor.2C_RSX.29></span><span class=mw-headline id=2031_(Thermal_Sensor,_RSX)>Error code: 2031 (Thermal Sensor, RSX)</span></h4>
+<ul><li>Components Involved:
+<ul><li>RSX</li>
+<li>RSX Temperature Monitor (IC2101 on COK-001)</ul></ul>
+<p>GPU Thermal Monitor (IC1002) external sense line. Check C2103, R2101/2 &amp; replace IC2101 before reballing/Replacing RSX. If all else fails the GPU's thermal diode is dead. Confirmed when the RSX is removed, you'll get 1b02/2031 at step number 20.&nbsp; Was seen in a PS3 that was destroyed by a heatgun, which also had A0A02030/2033 &amp; A0902031. Once reported to be caused by a checksum mismatch at address 3dfe. 
+</p>
+<h4><span id=2033_.28Thermal_Sensor.2C_South_Bridge.29></span><span class=mw-headline id=2033_(Thermal_Sensor,_South_Bridge)>Error code: 2033 (Thermal Sensor, South Bridge)</span></h4>
+<ul><li>Components Involved:
+<ul><li>South Bridge</li>
+<li>South Bridge Temperature Monitor (IC3101 on COK-001)</ul></ul>
+<p>Typically a dead SB Thermal Monitor IC. Check nearby SMDs &amp; traces. Was seen in a PS3 that was destroyed by a heatgun. Also had A0A02030/2031 &amp; A0902031. 
+</p>
+<h4><span class=mw-headline id=2040>Error code: 2040</span></h4>
+<p>Found during sabotage testing on a KTE-001 Board that removing F6300 caused a A0012040 error, this fuse appears to be on the 12v line.
+<p>for super slim reflow or reball CPU
+</p>
+<h4><span id=2044_.28Super_Slim_short_circuit_-_BT.2FWi-Fi_and_5Volt.29></span><span class=mw-headline id=2044_(Super_Slim_short_circuit_-_BT/Wi-Fi_and_5Volt)>Error code: 2044 (Super Slim short circuit - BT/Wi-Fi and 5Volt)</span></h4>
+<h4><span id=2101_.28CELL.29></span><span class=mw-headline id=2101_(CELL)>Error code: 2101 (CELL)</span></h4>
+<p>CELL (IC1001)
+<p>Often coincides with A0403034 indicating the GPU needs replaced (usually). Deliding can cause this, look for trace damage. In one case, errors A0402101 / A0403034 occured because RSX TX1 was shorted to ground by a nicked RSX trace during the delid. TX is the transmit line, so the CPU didn't recieve data from it, and noted the error (BitTraining BE:RRAC:BX0:BX:FLEXIO_ID).
+</p>
+<h4><span id=2102_.28RSX.29></span><span class=mw-headline id=2102_(RSX)>Error code: 2102 (RSX)</span></h4>
+<p>RSX (IC2001)
+<p>In several reports IC6301 replacement fixed it. In one case, 10x 2120 / 1x 2102 combo was fixed by replacing RSX_VDDIO voltage controler (IC6317).&nbsp; RSX_FBVDDQ (VRAM voltage) implicated. In most cases, it's an RSX Failure. Sometimes coinciding with A0403034 or other codes indicating GPU fail. Often after reflow attempt. 
+</p>
+<h4><span id=2103_.28South_Bridge.29></span><span class=mw-headline id=2103_(South_Bridge)>Error code: 2103 (South Bridge)</span></h4>
+<p>Southbridge Error (IC3001)
+</p>
+<h4><span id=2110_.28Clock_Subsystems.29></span><span class=mw-headline id=2110_(Clock_Subsystems)>Error code: 2110 (Clock Subsystems)</span></h4>
+<p>Clock Generator Error (IC5001)
+<p>This error can be caused by a 5V_MISC short to ground. One user had an A0022110 after replacing IC6105 (Buck Converter) and accidentally bridging the 5V voltage input. So check the 5V line for shorts.
+<p>This error has been resolved by a number of users who had a short on F6001. It is important to note that something usually causes that fuse to blow, like a short. So it's important to troubleshoot the board to find and repair the shorting component before replacing the fuse. Otherwise the new one will blow too.
+<p>One user, who resolved this error on his C model PS3, noted "very short YLOD. Error code shows 2110[...]Some earlier code shows 1001 and 1002." The 1001 &amp; 1002 errors he noted in the log before the 2110 appeared may have been a clue that C6019 or C6020 (as they are in parallel) was deteriorating. Further investigation is needed to confirm this hypothesis, however. In his case, C6019 was shorting and caused F6001 to blow. This short overloaded F6001 and cut power to many Subsystems, such as the HDD, USB ports, South bridge, CPU, GPU, etc.
+Another user confirmed this. The error log was showing code 2110 and one entry earlier was showing code 1001. Checking both capacitors after removing them from the board, confirmed that one capacitor was reading 140 ohms and not reading as a capacitor, so it was working as a resistor causing extra load in the fuse.
+<p>One particularly noteworthy component is IC6020, which supplys +3.3v_MK_Vdd to the clock generator (IC5001). When F6001 blows, a 02 2110 is generated. A step number of 02 is very early in the power on sequence (POS), which explains why 2110 is triggered instead of another error code. Since the clock generator is critical for timing, it is one of the first things the SYSCON checks during the POS.
+</p>
+<h4><span id=2111_.28Clock_CELL.29></span><span class=mw-headline id=2111_(Clock_CELL)>Error code: 2111 (Clock CELL)</span></h4>
+<p>Clock Generator Error (IC5003)
+<p>Once reported in a console with a bad RSX Thermal monitor. Had mostly 2031 errors at various step numbers. The 2111 was a rare occurance. SYSCON reported it as an "Unrecoverable FATAL ERROR by thermal." Check C2103, R2101/2 &amp; replace IC2101 before reballing/Replacing RSX. If all else fails the GPU's thermal diode is dead. 
+</p>
+<h4><span id=2112_.28Clock_CELL.29></span><span class=mw-headline id=2112_(Clock_CELL)>Error code: 2112 (Clock CELL)</span></h4>
+<p>Clock Generator Error (IC5002) 
+</p>
+<h4><span id=2113_.28Clock_CELL.2C_RSX.2C_South_Bridge.29></span><span class=mw-headline id=2113_(Clock_CELL,_RSX,_South_Bridge)>Error code: 2113 (Clock CELL, RSX, South Bridge)</span></h4>
+<p>Clock Generator Error (IC5004)
+<p>Analog Voltage for the core PLL of IC5004, which is an ICS9214 Clock Generator used to support the Rambus XDR memory subsystem and Redwood logic interface.
+<p>SW_1_B enables control Pin 5 on IC6013, which generates +2.5V_LREG_XCG_500_MEM. If that fails it generates A0092113.​
+<p>Reportedly fixed by replacing IC5001. One person tried replacing X5301, but short C5142 (2.5v to GND). This killed power to IC5004 (RSX/CELL/SB Clock Generator for FlexIO) and caused error A0092113. IC5004 relies on +1.2V_YC_RC_VDDIO refrence voltage to carry the signals. That can be affected by RSX/CPU faults. Another possability is F6302 or nearby SMDs, which supplys 1.7V_MISC to IC6303 to generate +1.2V_YC_RC_VDDIO, among other voltages required to start CPU/SB/GPU.​
+<p><b>2114 (Unknown)</b>​
+<p>Bad GPU NEC/TOKINs if assiciated with 1002 and/or 3004. Has been reported in VER-001 and DYN-001 motherboard revisions. Related codes have been reported in a DIA-002, with A0091002/A0102014, A0101002/A0102113. That was presumably caused by failed RSX tokins. ​
+<p>A lone 2114 or one assiciated with 2124, 3020, 1301, and/or 3034 may be GPU/BGA related. Possably HDMI encoder (MN864709), or Texas instrument 88J9LKK C5714 G4 Clock generator, but evidence for both of those cases is weak. However, given it's similarity to error code A0092113, which is related to the clock generators, a connection is suspected.​
+</p>
+<h4><span id=2120_.28HDMI_I.2FO_Error.29></span><span class=mw-headline id=2120_(HDMI_I/O_Error)>Error code: 2120 (HDMI I/O Error)</span></h4>
+<p>NOTE: Context matters with this error code! The step number and the number of codes per YLOD is different. Careful observation allows you to diagnose the most likely cause.
+<p>2120 means an issue with the high speed data buss connection between the DVE &lt;--&gt; RSX &lt;--&gt; HDMI transmitter has occurred. This I/O error DOES NOT mean the HDMI encoder (IC2502) is bad. It is context based. Associative, not diagnostic by itself. You must infer the diagnosis by using other, more diagnostic codes and observe console behavior to identify the cause.
+<p>Count the number of 2120's your SYSCON records per YLOD event; look at the timestamp. 10x A0202120 + A0213013 error combinations appear to be related to VDDIO, the reference voltage powering the I/O buss. IC6301 is involved in the formation of +1.7V_MISC, which among other things provides input power to the DC-DC converters that output +1.2V_YC_RC_VDDIO, +1.5V_YC_RC_VDDA, +1.2V_SB_VDDC and +1.2V_SB_VDDR. Lack of voltage to these DC/DC converters downstream of IC6301 suggests F6302 has blown. A number of people have fixed these 2120/3013 error combos by finding shorts at or near C6320 and replacing Fuse F6302. But there are many other SMD nearby that might cause these fuses to blow. So you will need to track the source of the short and fix it, or the fuse will just blow again.
+<p>A bad thermistor (TH2501) has been reported to cause A0002120. It provides over current protection for the HDMI transmitter and output device in case there's a 5v short. This might happen if pins 17 (GND) and 18 (+5v) are damaged on your HDMI port or cable. Or if C2558 or C2570 short. See the service manual circuit diagrams as there are other SMDs that could malfunction and cause this error.
+<p>A0802120 and A0902120 errors can be caused by BGA or Bump defects that affect I/O, either the RSX or CELL. BGA defects on RSX VDDIO pads have been confirmed with a pressure test to have caused 2120 errors, but usually only one of them occurs per YLOD event. For example, one YLOD event may generate A0403034, A0404412 and an A0902120 error. This would indicate a bad GPU, not a bad HDMI transmitter. And since it occurred during the shutdown state (step number 90) this excludes issues that would have generated an error earlier in POST, like a fuse or a short in the Voltage regulation module (VRM).
+<p>The HDMI transmitter (IC2502) can also cause A0802120 and A0902120 errors. The IC itself or any of the SMDs between it and the RSX. You can tell a genuine HDMI transmitter issue apart because there multiple A0802120 errors occurring during the bootloader after the console has completed the power on self test (POST). This excludes a fuse and VRM issues, as indicated by the step number 80 (power on state). You will usually see a different number of 2120s at random. Like 4 or 6 of them. This is different than the 10x 2120/3013 error combo or 3034/4xxx/2120 combo described earlier. 
+</p>
+<h4><span id=2122_.28DVE.29></span><span class=mw-headline id=2122_(DVE)>Error code: 2122 (DVE)</span></h4>
+<p>DVE Error (IC2406, CXM4024R MultiAV controller for analog out)
+</p>
+<h4><span id=2124_.28AV.29></span><span class=mw-headline id=2124_(AV)>Error code: 2124 (AV)</span></h4>
+<p>This error tends to cause a delayed Yellow Light Of Death (10s - 1min). Sometimes described as a Green Light Of Death (GLOD) or Red Light Of Death (RLOD). 
+<p>2124 and 2024 errors have been fixed by replacing both the AV and HDMI encoders. One user reported 2024/2124 errors resolved by replacing the HDMI encoder. Another removed the HDMI encoder and tested the console without it. That console primarily filled the errorlog with 2124 errors, but a few 2024's as well. So it is unclear if 2124 is specific to the HDMI Encoder or AV Encoder. It seems it could be either.
+</p>
+<h4><span id=2130_.28Thermal_Sensor.2C_CELL.29></span><span class=mw-headline id=2130_(Thermal_Sensor,_CELL)>Error code: 2130 (Thermal Sensor, CELL)</span></h4>
+<ul><li>Components Involved:
+<ul><li>CELL</li>
+<li>CELL Temperature Monitor (IC1101 on COK-001)</ul></ul>
+<p>CPU Thermal Monitor (IC1101) external sense line. Check C1002, R1003/4 &amp; replace IC1002 before reballing CPU. If all else fails the CPU's thermal diode is dead. 
+</p>
+<h4><span id=2131_.28Thermal_Sensor.2C_RSX.29></span><span class=mw-headline id=2131_(Thermal_Sensor,_RSX)>Error code: 2131 (Thermal Sensor, RSX)</span></h4>
+<ul><li>Components Involved:
+<ul><li>RSX</li>
+<li>RSX Temperature Monitor (IC2101 on COK-001)</ul></ul>
+<p>GPU Thermal Monitor (IC1002). Check C2103, R2101/2 &amp; replace IC2101 before reballing/Replacing RSX. If all else fails the GPU's thermal diode is dead. 
+</p>
+<h4><span id=2133_.28Thermal_Sensor.2C_South_Bridge.29></span><span class=mw-headline id=2133_(Thermal_Sensor,_South_Bridge)>Error code: 2133 (Thermal Sensor, South Bridge)</span></h4>
+<ul><li>Components Involved:
+<ul><li>South Bridge</li>
+<li>South Bridge Temperature Monitor (IC3101 on COK-001)</ul></ul>
+<h4><span id=2203_.28South_Bridge.29></span><span class=mw-headline id=2203_(South_Bridge)>Error code: 2203 (South Bridge)</span></h4>
+<p>From sabotage tests it was found that disabling +2.5V_SB_PLL_VDDC
+produced four A0802203 errors.​ Also, disabling +1.2V_SB_VDDR produced A0302203 &amp; A0403034.
+<p>Sometime seen with a "SB Counter Error -&nbsp; Explicit Bug" in bringup log. Oftern accompanies CPU (1200) or GPU (1201) Overheats. Once occurred in GLOD, after holding power "SB (FATAL) XDR Link not initilized."
+</p>
+<h4><span class=mw-headline id=2310>Error code: 2310</span></h4>
+<hr>
+<h3><span class=mw-headline id=Fatal_Boot_Errors>Fatal Boot Errors</span></h3>
+<hr>
+<h4><span class=mw-headline id=3000>Error code: 3000</span></h4>
+<p>Power Failure
+</p>
+<h4><span class=mw-headline id=3001>Error code: 3001</span></h4>
+<p>12v Power Failure
+<p>Usually this caused by a bad Power Supply Unit (PSU). 
+<p>Alternatively, a failure on the 12v_main line can cause it. Check fuses, capacitors, resistors, and ICs on the 12v line. Measure resistance of the large 2 prong 12v connector on the motherboard. It should read in the Kilo ohms range if there is sufficient separation. Otherwise you may have a short somewhere on the line.
+</p>
+<h4><span class=mw-headline id=3002>Error code: 3002</span></h4>
+<p>Power Failure
+</p>
+<h4><span id=3003_.28CELL_Core_Power_Failure.29></span><span class=mw-headline id=3003_(CELL_Core_Power_Failure)>Error code: 3003 (CELL Core Power Failure)</span></h4>
+<p>This error will occur in the case of a PWR failure on the main core voltage of the CPU (VDDC). CPU Bulk filter caps (Eg. NEC/TOKIN) or any SMD in the Feedback and Compensation network of the Voltage Regulation module (VRM). Including the Buck Converters (AKA IOR Power Blocks).
+<p>A short Blu-Ray drive can cause this error as well. Be sure that your drive is going well before doing anything on your console.
+</p>
+<h4><span id=3004_.28RSX_Core_Power_Failure.29></span><span class=mw-headline id=3004_(RSX_Core_Power_Failure)>Error code: 3004 (RSX Core Power Failure)</span></h4>
+<p>This error will occur in the case of a PWR failure on the main core voltage of the GPU (VDDC). Bulk filter caps (Eg. NEC/TOKIN) or any SMD in the Feedback and Compensation network of the Voltage Regulation module (VRM). Including the Buck Converters (AKA IOR Power Blocks).
+<p>On a CECHB official Sony 40nm Frankenstein console, seen together with 1002 errors YLOD on boot. RSX NEC/TOKINs were replaced, which led to GLOD. Root cause was bad BGA of the 40nm RSX, needed to be reballed.
+</p>
+<h4><span class=mw-headline id=3005>Error code: 3005</span></h4>
+<p>Had A0043005 on a PQX-001, found that the RSX was shorted out and causing A0043005, I was unable to fix the error.
+<p>This error will occur in the case of fuse F7601 is burning in PQX-001.
+</p>
+<h4><span class=mw-headline id=3010>Error code: 3010</span></h4>
+<p>CELL Error
+<p>Observations: 
+A user triggered this error by injecting 3.3V into PWRGD (power good) of IC6103 (NCP5318 CPU Buck Controller). It generated error 20 1001 and 20 3010.
+Another user (Razmann4k) got this error on their CECHL04 by attempting the eraser mod on an already delidded Cell and noticed a crack running down the middle of the Cell die. It caused 20 3010. A 20 3010 error was also observed on a CELL that was physically damaged during a delidding attempt by the console owner.
+<p><br>
+This problem may be related to the PLL signal generator circuit, open resistors, crystal oscillator or even the integrated itself (CDC735/CDC736/4227ANLG)
+<p>RSX FBVDDQ shorts, BE thermal/PLL VDDA open line, PWM signal disruption to CPU Buck Converters at startup have all been known to cause A0203010 errors. Seen in consoles that also had or developed 3034/4412.
+</p>
+<h4><span class=mw-headline id=3011>Error code: 3011</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=3012>Error code: 3012</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=3013>Error code: 3013</span></h4>
+<p>BE_SPI DI/DO ERROR
+<p>CELL not communicating to syscon via SPI (1.2V MC2_VDDIO and 1.2V BE_VCS no output) = Possible shorts on the line, check C4001 and trailing caps. Possible dead CPU? 
+<p>Another user had one on a CPU he damaged while deliding.
+<p>A0212120/A0213013 error combinations are common. They appear to be related to VDDIO. IC6301 is involved in the formation of +1.7V_MISC, which among other things provides input power to the DC-DC converters that output +1.2V_YC_RC_VDDIO, +1.5V_YC_RC_VDDA, +1.2V_SB_VDDC and +1.2V_SB_VDDR. Lack of voltage to these DC/DC converters downstream of IC6301 suggests F6302 has blown. A number of people have fixed these 2120/3013 errors by finding shorts at or near C6320 and replacing Fuse F6302. But there are many other SMD nearby that might cause these fuses to blow. So you will need to track the source of the short and fix it, or the fuse will just blow again.
+<p>One person reported A0202120/A0213013 when his CPU substrate (interposer) was cracked in half by a failed delid attempt.
+<p>Through sabotage testing is was found that disabling +1.2V_YC_RC_VDDIO caused A0213013​.
+<p>Also through sabotage testing, it was found that when L6305 is removed it cuts off +1.8V_RSX_FBVDDQ (VRAM voltage). It caused a 10x A0202120 &amp; 1x A0213013 error combo.
+</p>
+<h4><span class=mw-headline id=3020>Error code: 3020</span></h4>
+<p>CELL
+<p>A0233020 occurred during the readiness check after VDDC is formed. It suggests a voltage instability or error preventing the CPU from reporting power good back to the SYSCON. Has occurred in a console where every chip was heatgunned. Associated errors in the log were, A0A02031/A0201802 (RSX thermal monitor and interrupt). Before the heatgut it had, A0801301/A0802120 (BE_PLL &amp; VDDIO error). In another console it coincided with A0231002 (RSX VDDC filtering). That console had A0003001, A0002120/A0221002, A0221002/A0222120, A0231002/A0233020. Indicating a more serious issue with the PSU, Fuses or Core voltage ICs.
+</p>
+<h4><span class=mw-headline id=3030>Error code: 3030</span></h4>
+<p>CELL
+<p>Reportedly, a CPU BGA defect caused by delid. No trace damage or knocked SMD's observed.
+</p>
+<h4><span class=mw-headline id=3031>Error code: 3031</span></h4>
+<p>CELL XGC REF Voltage Error
+<p>Error during CPU initialization. This error appears to be a CPU BGA defect. In one PS3, it was caused by an "eraser mod," which puts pressure underneath the CPU (bad idea). In another, after delidding GPU/CPU an A0313032 was reported by knocking R5167 off. Which is +1.2V_YC_RC_VDDIO refrence voltage for the CPU's Redwood FlexIO ADC differential reference clock pair (BE_RC_REFCLK_P). An open line fault. He replaced the resistor and got A0402101 / A0403034 because RSX TX1 was shorted to ground by a nicked RSX trace during the delid. TX is the transmit line, so the CPU didn't recieve data from it, and noted the error (BitTraining BE:RRAC:BX0:BX:FLEXIO_ID). He messed with the nick and the error changed to A0313031.
+</p>
+<h4><span class=mw-headline id=3032>Error code: 3032</span></h4>
+<p>CELL BE XGC REF Voltage Error
+<p>Error during CPU initialization. This error appears to be a CPU BGA defect. In one PS3, A0313031 was caused by an "eraser mod," which puts pressure underneath the CPU (bad idea). In another, after delidding GPU/CPU an A0313032 was reported by knocking R5167 off. Which is +1.2V_YC_RC_VDDIO refrence voltage for the CPU's Redwood FlexIO ADC differential reference clock pair (BE_RC_REFCLK_P). An open line fault. He replaced the resistor and got A0402101 / A0403034 because RSX TX1 was short to ground by a nicked RSX trace during the delid. TX is the transmit line, so the CPU didn't recieve data from it, and noted the error (BitTraining BE:RRAC:BX0:BX:FLEXIO_ID). He messed with the nick and the error changed to A0313031.
+<p>It was discovered through sabotage testing that disabling +1.5V_YC_RC_VDDA caused error A0313032
+</p>
+<h4><span class=mw-headline id=3033>Error code: 3033</span></h4>
+<p>CELL
+<p>This error has been triggered when pad N12 (RSXVRM_VID0) was damaged, preventing RSX VDDC voltage from being set correctly. SYSCON sets the CPU VID just before the Config ring data is loaded. Apparently, SYSCON sets RSX VID on IC6201 (Buck Controller) at step number 32, which is just after. These voltages must be stable before the FlexIO can calibrated (BitTraining at Step No. 40 &amp; ByteTraining at 50 &amp; 51).
+</p>
+<h4><span class=mw-headline id=3034>Error code: 3034</span></h4>
+<p>CELL / RSX / South Bridge error during Bit-Training
+<p>This error occurs when Bit Training fails. Bit Training, also know as bit calibration, is a critical process during the power-on-reset (POR) sequence of the CELL BE processor. It fine-tunes the behavior of individual bits within the 8-bit-wide Rambus channels. This adjustment accounts for variations in circuitry, wiring, and loading delays. Bit training plays a pivotal role in optimizing signal quality by calibrating the signal driver current, driver impedance, and ensuring that the timing of each of the eight data bits aligns with clock edges, effectively centering the data "eye" allowing for more accurate and reliable data transmission. 
+<p><b>Remember, ITS NOT ALWAYS a bad connection between the CPU, and GPU.</b> Bit training calibrates the connection between the GPU, CPU AND South bridge. For example, A0403034 occurred on a VER-001 with a probably BGA defect. By putting pressure on the southbridge the console would boot. Look at the data error and other information of the console before assuming a bad GPU.
+<p>This is the most common error seen in early Phat model PS3's with the 90nm RSX. It is the hallmark of solder fatigue (such as a cracked solder ball or bump defect) which affects the Flex IO interface that allows the CPU, GPU, and SB to communicate. It is by no means limited to the early models, however. These errors have been seen in every model of PS3 with varying frequency. However, it's most common in the earliest models, likely due to a manufacturing defect in the 90nm RSX material set. Namely a CTE mismatch between the underfill and bump material that leads to premature solder fatigue and GPU failure. Dubbed "BumpGate," this is a well known failure modality among GPUs manufactured from 2005-2008. Although it has not been proven unequivocally that the 90nm RSX is affected by Bumpgate, members of the community have shown the 90nm RSX has an increased failure rate, similar material set, and exhibits similar symptoms to known bumpgate affected chipsets - such as black screens (GLOD), graphical artifacts like lines, double images, color splotches and pixelation. 
+<p>While Bumpgate is a plausible explanation, it's not the only one. The materials used to construct the motherboard and processors have different coefficient of thermal expansion (CTE). This means they will expand and contract at different rates as the chip heats up and cools down, which applies force to solder connections. Over many thermal cycle this deforms the solder and causes a defect. That may affect the Bumps, which attach the silicon die to the interposer (sometimes referred to as substrate) or the Ball-Grid Array (BGA) which connects the interposer to the Motherboard. 
+<p>3034 is triggered when Bit calibration, also known as BitTraining, cannot complete correctly. So it is not limited to a singular cause. BGA defects from thermal cycling, drop damage, pulling force from separating the heat sink from the processors while disassembling, or delidding can occur. The bumps on CPU, GPU, or SB can fail, Flex IO traces that connect them can be broken/scratched, or accumulated damage from wear and tear (electromigration) can also cause BitTraining to fail. Anything that can disrupt the impedance of the FlexIO can cause BitTraining to fail. A skilled technician will need to use deductive reasoning to diagnose the cause and choose the appropriate repair.
+<p>A qualitative test known as a "pressure test" may be used to help make a diagnosis. Applying slight pressure, within reason (not your body weight or clamping force which could cause a BGA defect), to the processor flexes the motherboard beneath the BGA and "may" temporarily reconnect a solder ball with it's pad. Like holding 2 wires together. This can cause flickering on screen, a console to power on when it couldn't before, etc. If the console or error responds differently when pressure is applied, this may be taken as evidence of a BGA defect. It is not definitive, but tips the odds in favor of that diagnosis. A reball in that case may be successful. However, if it does not respond to pressure is not likely to be the BGA and another explanation, such as bumps are more likely. It should be noted that bumps can be affected by force as well, but because the underfill supports them, it generally requires more force to reconnect them using this method. This is what the "Bolt mod," commonly performed on the XBOX 360 did. That much force permanently deforms the motherboard and causes irreparable damage. DO NOT DO THIS! But it illustrates the point. You don't need much force to see if the BGA is affected and if it responds to light pressure, it's unlikely to be the bumps. Therefore, taken together with other clues, it can be helpful to a skilled technician gathering evidence for a diagnosis. 
+<p>In consoles with a 90nm RSX (CECH-Axx/Bxx/Cxx/Exx/Gxx/Hxx, M03 and Q00 models) the most likely cause of a 3034 is the GPU itself. It can be replaced with another 90nm RSX without modification. However, it can also be replaced with a more reliable 65nm or 40nm model, using a process nicknamed a "Frankenstein Mod." SONY service technicians performed this modification in some officially refurbished consoles. The PS3 community has developed a method as well. Since there is a question about the 90nm RSX's reliability and both a reball and Frankenstein mod require the 90nm to be desoldered, it is advisable to replace the 90nm GPU with a more reliable model instead of risking another 90nm GPU. Rework is hard on the motherboard and surrounding components, so choosing a repair with the fewest uncertainty's is wise.
+<p>In models without the 90nm RSX, 3034 is still possible, but far less likely to be caused by the GPU. CPU BGA defects are common in dropped consoles, those that have been delidded or have trace damage to the area around the processors. So troubleshooting is necessary to make a diagnosis.
+</p>
+<h4><span class=mw-headline id=3035>Error code: 3035</span></h4>
+<p>CELL and RSX error during Byte-Training
+<p>Failing GPU. RSX BGA or Bump Defect. Gradual decline in the solder connection affected Byte Calibration, but it managed to pass bit calibration 1st. A0403034 is soon to follow.&nbsp; As electromigration wears down RSX Core, A0801601/A0801701 become A0501802/A0503037, A0503035, and finally A0403034. 
+</p>
+<h4><span class=mw-headline id=3036>Error code: 3036</span></h4>
+<p>CELL and RSX
+</p>
+<h4><span class=mw-headline id=3037>Error code: 3037</span></h4>
+<p>CELL and RSX
+<p>RSX BGA or Bump Defect have cause A0503037/1802. A gradual decline in the solder connection affected Byte Calibration, but it managed to pass bit calibration 1st. A0403034 is soon to follow. 
+</p>
+<h4><span class=mw-headline id=3038>Error code: 3038</span></h4>
+<p>CELL and RSX
+</p>
+<h4><span class=mw-headline id=3039>Error code: 3039</span></h4>
+<p>CELL and RSX
+<p>Occurred in a CECHL04 coinciding with a check stop error (14FF) during IO initialization at step# 52, which is after Byte-Training, but before the flash firmware sequence at step# 60. So maybe it's starship 2 related? Or it could be CPU/GPU related. Unknown.
+</p>
+<h4><span class=mw-headline id=3040>Error code: 3040</span></h4>
+<p>Flash
+<p>A0603040 is known to be caused by not soldering the flash (NAND/NOR) back on properly. It happens when the flash is not powered. Step #60 is when the StarShip 2 flash controller and NAND/NOR are initialized, kicking off the firmware sequence that loads the Operating System. Check their voltages and be sure the FW is not corrupt. If you have a backup, you could try replacing the Flash to see if a module failed.
+</p>
+<h4><span class=mw-headline id=3041>Error code: 3041</span></h4>
+<p>A0523041 only reported once. Step #s 50-60 are when Southbridge paripherals are initialized. Step 52 is the last step before 60, when the flash and controller (SS2) are initialized. A0603040 will occur. Speculation: Perhaps 3041 is related to the SS2 or another SB paripheral. Perhaps a flash solder connection, or corruption issue. We don't know. Too few reports.
+</p>
+<h3><span class=mw-headline id=Data_Errors>Data Errors</span></h3>
+<hr> 
+<ul><li>This error codes seems to be repeated up to 5 times for 5 special cases, as example, errors 4<b>0</b>01, 4<b>1</b>01, 4<b>2</b>01, 4<b>3</b>01, 4<b>4</b>01 are related to CELL, the only thing that changes in the error code is the second digit (located immediatly after the category). If at some point we find what means that digit we can join the wiki page sections together (with titles: "4001, 4101, 4201, 4301, 4401", etc...)</ul>
+<h4><span class=mw-headline id=4001>Error code: 4001</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4002>Error code: 4002</span></h4>
+<p>RSX
+</p>
+<h4><span class=mw-headline id=4003>Error code: 4003</span></h4>
+<p>Southbridge
+</p>
+<h4><span class=mw-headline id=4011>Error code: 4011</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4101>Error code: 4101</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4102>Error code: 4102</span></h4>
+<p>RSX
+</p>
+<h4><span class=mw-headline id=4103>Error code: 4103</span></h4>
+<p>Southbridge
+</p>
+<h4><span class=mw-headline id=4111>Error code: 4111</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4201>Error code: 4201</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4202>Error code: 4202</span></h4>
+<p>RSX
+</p>
+<h4><span class=mw-headline id=4203>Error code: 4203</span></h4>
+<p>Southbridge
+</p>
+<h4><span class=mw-headline id=4211>Error code: 4211</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4212>Error code: 4212</span></h4>
+<p>RSX
+</p>
+<h4><span class=mw-headline id=4221>Error code: 4221</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4222>Error code: 4222</span></h4>
+<p>RSX
+</p>
+<h4><span class=mw-headline id=4231>Error code: 4231</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4261>Error code: 4261</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4301>Error code: 4301</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4302>Error code: 4302</span></h4>
+<p>RSX
+</p>
+<h4><span class=mw-headline id=4303>Error code: 4303</span></h4>
+<p>Southbridge
+</p>
+<h4><span class=mw-headline id=4311>Error code: 4311</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4312>Error code: 4312</span></h4>
+<p>RSX
+</p>
+<h4><span class=mw-headline id=4321>Error code: 4321</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4322>Error code: 4322</span></h4>
+<p>RSX
+</p>
+<h4><span class=mw-headline id=4332>Error code: 4332</span></h4>
+<p>RSX
+</p>
+<h4><span class=mw-headline id=4341>Error code: 4341</span></h4>
+<p>CELL
+</p>
+<h4><span class=mw-headline id=4401>Error code: 4401</span></h4>
+<p>CELL or RSX
+</p>
+<h4><span class=mw-headline id=4402>Error code: 4402</span></h4>
+<p>CELL or RSX
+</p>
+<h4><span class=mw-headline id=4403>Error code: 4403</span></h4>
+<p>CELL or RSX
+</p>
+<h4><span class=mw-headline id=4411>Error code: 4411</span></h4>
+<p>CELL or RSX
+</p>
+<h4><span class=mw-headline id=4412>Error code: 4412</span></h4>
+<p>CELL or RSX
+</p>
+<h4><span class=mw-headline id=4421>Error code: 4421</span></h4>
+<p>CELL or RSX
+</p>
+<h4><span class=mw-headline id=4422>Error code: 4422</span></h4>
+<p>CELL or RSX
+</p>
+<h4><span class=mw-headline id=4432>Error code: 4432</span></h4>
+<p>CELL or RSX
+</p>
+<h4><span class=mw-headline id=4441>Error code: 4441</span></h4>
+<p>CELL or RSX
+</p>
+<h4><span class=mw-headline id=5FFF>Error code: 5FFF</span></h4>
+<p>CELL or RSX
+<p>In recent times, this error has been known for the CPU (CELL), but it is actually due to an error in the NOR of the Playstation 3 SLIM/SUPER SLIM. Due to a failure when performing the exploit, you can end up having a console Bricked, for this use E3 FLASHER, Tennsy.etc
+<p>For 3XXX, 4XXX consoles, the BRICK WITH Tennsy can be solved. in 4XXX keep in mind that the NOR can be emmc (12GB) therefore it will not be possible to solve it (for now...)
+<p>for Super Slim reflow or reball RSX
+</p>
